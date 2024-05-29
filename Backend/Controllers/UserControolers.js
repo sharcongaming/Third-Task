@@ -3,10 +3,12 @@ import jwt from "jsonwebtoken";
 import UserModal from "../Modal/UserModal.js";
 
 
+
 export const Register = async (req, res) => {
   try {
-    const {  email, password,} = req.body;
-    if ( !email || !password )
+    const { userData } = req.body;
+    const { name, email, password,  confirmpassword} = req.body.userData;
+    if (!name || !email || !password ||  !confirmpassword)
       return res.json({
         success: false,
         message: "All Feilds are Mandatory!",
@@ -23,9 +25,10 @@ export const Register = async (req, res) => {
     const hashPassW = await bcrypt.hash(password, 10);
 
     const user = new UserModal({
-        password: password,
+      name:name,
       email:email,
-     
+      password: hashPassW,
+      confirmpassword: confirmpassword,
      
     });
 
@@ -41,10 +44,11 @@ export const Register = async (req, res) => {
 };
 
 
+
  
 export const Login = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password } = req.body.userData;
     if (!email || !password)
       return res.json({
         success : false,
@@ -59,12 +63,10 @@ export const Login = async (req, res) => {
     // console.log(isPasswordRight, "isPasswordRight");
     if (isPasswordRight) {
       const userObeject = {
-        // name: user.name,
         email: user.email,
         _id: user._id,
       };
-        // console.log("Before ")
-        // console.log(expirytime, "expirytime")
+    
       const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
       // console.log(token, "token her");
       return res.json({
@@ -79,3 +81,12 @@ export const Login = async (req, res) => {
     return res.json({ success : false, message: error.message });
   }
 };
+
+
+
+
+
+
+
+
+
