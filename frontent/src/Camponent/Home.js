@@ -1,4 +1,8 @@
 import React from 'react'
+import "../Camponent/Style/Navbar.css"
+import Swiper from 'swiper';
+
+import 'swiper/css';
 
 const Home = () => {
   return (
@@ -7,10 +11,10 @@ const Home = () => {
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSm_iJwdOTKNHBX7dfNESN9iuSk0eTnX4d0OtuRU-MYDWGJ6TCU" class="w-100" alt="image"/>
+                <img src="https://t3.ftcdn.net/jpg/02/89/89/60/240_F_289896093_bnIp6I66LeQuuHr5RymKubKsCDf0u4pL.jpg" class="w-100" alt="image"/>
                 <div class="content col-8">
                     <h1 class="text-white display-3">The Best <span class="text-warning">Games</span> Out There</h1>
-                    {/* <p class="text-white fs-6 fw-light py-3 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Nostrum maxime recusandae natus alias veniam quasi <br> incidunt doloremque temporibus aperiam. Architecto, officiis </p> */}
+                    <p class="text-white fs-6 fw-light py-3 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Nostrum maxime recusandae natus alias veniam quasi <br/> incidunt doloremque temporibus aperiam. Architecto, officiis </p>
                     <button class="btn btn-warning text-uppercase text-white fs-5">read more</button>
                 </div>
               </div>
@@ -18,7 +22,7 @@ const Home = () => {
                 <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUvfNrOXSMSYr4eoloDE-RYi20cFmXzJhP-aPpi34QmLumDHVf" class="w-100" alt="image"/>
                 <div class="content col-8">
                     <h1 class="text-white display-3">The Best <span class="text-warning">Games</span> Out There</h1>
-                    {/* <p class="text-white fs-6 fw-light py-3 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Nostrum maxime recusandae natus alias veniam quasi <br> incidunt doloremque temporibus aperiam. Architecto, officiis </p> */}
+                    <p class="text-white fs-6 fw-light py-3 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Nostrum maxime recusandae natus alias veniam quasi <br/> incidunt doloremque temporibus aperiam. Architecto, officiis </p>
                     <button class="btn btn-warning text-uppercase text-white fs-5">read more</button>
                 </div>
               </div>
@@ -164,8 +168,8 @@ const Home = () => {
                             <div class="card-body">
                               <h5 class="card-title">World Of WarCraft</h5>
                               <span className="text-white">
-  Tournament Begins: June 20, 2018 <br />
-  Tournament Ends: July 01, 2018 <br />
+  Tournament Begins: June 20, 2024 <br />
+  Tournament Ends: July 01, 2023<br />
   Participants: 10 teams <br />
   Tournament Author: Admin <br />
 </span>
@@ -187,8 +191,8 @@ const Home = () => {
                             <div class="card-body">
                               <h5 class="card-title">World Of WarCraft</h5>
                               <span className="text-white">
-  Tournament Begins: June 20, 2018 <br />
-  Tournament Ends: July 01, 2018 <br />
+  Tournament Begins: June 20, 2023 <br />
+  Tournament Ends: July 01, 2024 <br />
   Participants: 10 teams <br />
   Tournament Author: Admin <br />
 </span>
@@ -282,9 +286,9 @@ const Home = () => {
                         <img src="https://i.pinimg.com/originals/59/64/e3/5964e3f86b6c305267b5267374c6730f.png" alt="images"/>
                     </div>
                     <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                    <div class="images">
+                    {/* <div class="images">
                         <img src="https://i.pinimg.com/originals/59/64/e3/5964e3f86b6c305267b5267374c6730f.png" alt=""/>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div class="col-lg-4">
@@ -360,6 +364,34 @@ const Home = () => {
             </div>
         </div>
     </footer>
+
+
+    {/* footer */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footerCopyright">
+             <p>&copy; 2024 design and developed by <a href="#" class="developedBy">BlackHole Coding Crew</a>.</p>
+        </div>
     {/* <!-- footer / --> */}
 
 

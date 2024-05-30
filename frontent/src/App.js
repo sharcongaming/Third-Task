@@ -4,6 +4,7 @@ import Home from './Camponent/Home';
 import Register from './Camponent/Register';
 import Login from './Camponent/Login';
 import Navbar from './Camponent/Navbar';
+import Footer from './Camponent/Footer';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Route exact path='/'element={<Home/>}/>
       <Route exact path='/register'element={<Register/>}/>
       <Route exact path='/login'element={<Login/>}/>
-
+      <Route exact path='/footer'element={<Footer/>}/>
       </Routes>
+      {/* <Footer/> */}
    
     </div>
   );

@@ -88,6 +88,13 @@ body{
 }
 .navbar{
     background: var(--color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;  /* OR width: 100%; */
+    background-color: #f0f0f0; /* Initial background color */
+    z-index: 999;
+    transition: background-color 0.3s ease-in-out;
 }
 .home img{
     min-height: 90vh;
@@ -134,7 +141,7 @@ img{
     
 }
 .games{
-    background-image: url(https://www.slidescarnival.com/wp-content/uploads/Elegant-Art-Nouveau-Style-Portfolio-1-400x225.jpg.optimal.jpg);
+    background-image: url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?t=st=1717068955~exp=1717072555~hmac=f190a40dbfbc4307177e518549a5f42c94218c26de0036160c1e3eafb944da43&w=826);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,6 +239,8 @@ img{
 
 
 
+
+
 @media(max-width: 600px){
     html{
         font-size: 50%;
@@ -243,4 +252,28 @@ img{
         margin: 45rem 0;
         background: #fff;
     }
+}
+.footerCopyright{
+    background-color: #BBF3F4;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    /* border: 5px solid black; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 40;
+}
+
+.footerCopyright p{
+    text-align: center;
+}
+
+.developedBy{
+    font-weight: bold;
+    color: var(--white);
+    color: red;
 }

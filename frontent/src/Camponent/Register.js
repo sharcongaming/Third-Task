@@ -52,7 +52,7 @@ const Register = () => {
     console.log(userData, "userData")
     return (
         <div className='body-first'>
-            <h1>Register</h1>
+            <h1 style={{marginTop:"10%"}}>Register</h1>
             <form onSubmit={handleSubmit}>
                 <label>Your Email</label><br />
                 <input className='input-email' type='email' onChange={handleChange} name='email' value={userData.email} /><br />

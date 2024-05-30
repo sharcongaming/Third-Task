@@ -15,7 +15,8 @@ const Navbar = () => {
         <div class="container">
          
           <a class="navbar-brand fs-1" href="#">
-            <img src="https://www.slidescarnival.com/wp-content/uploads/Elegant-Art-Nouveau-Style-Portfolio-1-400x225.jpg.optimal.jpg "/>
+            <h4>Logo</h4>
+            {/* <img src="https://www.slidescarnival.com/wp-content/uploads/Elegant-Art-Nouveau-Style-Portfolio-1-400x225.jpg.optimal.jpg "/> */}
           </a>
           <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,7 +34,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link fs-5 text-white" href="#forms">forms</a>
-                <h2>ejkfklsdfj;fdfg</h2>
+               
               </li>
               <li className="nav-item">
                 <p className="nav-link fs-5 text-white" href="#contact">contact</p>
