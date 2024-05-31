@@ -11,12 +11,12 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-      <Route exact path='/'element={<Home/>}/>
+      {/* <Route exact path='/'element={<Home/>}/> */}
       <Route exact path='/register'element={<Register/>}/>
       <Route exact path='/login'element={<Login/>}/>
-      <Route exact path='/footer'element={<Footer/>}/>
+      {/* <Route exact path='/footer'element={<Footer/>}/> */}
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
    
     </div>
   );
