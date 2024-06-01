@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 import { AuthContext } from '../Context/AuthContext';
 // import api from './apiConfig/index';
+// import "../Camponent/Style/Login.css"
+
 
 
 const Login = () => {
@@ -51,20 +53,20 @@ const Login = () => {
 
 
         <div className='here'>
-        //             <div className='from-box'>
-        //             <div className='button-box'>
-        //             <button></button>
-        //             {/* <div className='btn'> </div> */}
-        //           <button type='button' className='toogle-button'>Sign Up</button>
-        //           <button type='button' className='toogle-button'>Login</button>
+                 <div className='from-box'>
+                  <div className='button-box'>
+                  <button></button>
+                   {/* <div className='btn'> </div> */}
+                  <button type='button' className='toogle-button'>Sign Up</button>
+                  <button type='button' className='toogle-button'>Login</button>
                 
-        //            </div>  
-        //            <div className='socail-icons'>
-        //             <img src='https://www.shareicon.net/data/2016/07/10/119930_google_512x512.png'/>
-        //             <img src='https://tse3.mm.bing.net/th?id=OIP.aubU2lXxC1ZmPDdf-koomwHaH_&pid=Api&P=0&h=180'/>
-        //             <img src='https://tse4.mm.bing.net/th?id=OIP.H836RvDYYgQZcZn0TC8qBAHaHa&pid=Api&P=0&h=180'/>
+                   </div>  
+                   {/* <div className='socail-icons'>
+                    <img src='https://www.shareicon.net/data/2016/07/10/119930_google_512x512.png'/>
+                    <img src='https://tse3.mm.bing.net/th?id=OIP.aubU2lXxC1ZmPDdf-koomwHaH_&pid=Api&P=0&h=180'/>
+                     <img src='https://tse4.mm.bing.net/th?id=OIP.H836RvDYYgQZcZn0TC8qBAHaHa&pid=Api&P=0&h=180'/>
         
-        //            </div> 
+                    </div>  */}
         <div  className='body-first'>
             <h1>Login</h1>
             <form  input-group onSubmit={handleSubmit}>

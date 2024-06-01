@@ -3,7 +3,7 @@ import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 import { AuthContext } from '../Context/AuthContext';
- import "../Camponent/Style/Registr.css"
+//  import "../Camponent/Style/Registr.css"
 const Register = () => {
     const {state} =useContext(AuthContext)
     const [userData, setUserData] = useState({  email: "", password: "", confirmPassword: "",})
@@ -63,12 +63,12 @@ const Register = () => {
       <button type='button' className='toogle-button' >Register</button>
     
        </div>
-       <div className='socail-icons'>
+       {/* <div className='socail-icons'>
         <img src='https://www.shareicon.net/data/2016/07/10/119930_google_512x512.png'/>
         <img src='https://tse3.mm.bing.net/th?id=OIP.aubU2lXxC1ZmPDdf-koomwHaH_&pid=Api&P=0&h=180'/>
         <img src='https://tse4.mm.bing.net/th?id=OIP.H836RvDYYgQZcZn0TC8qBAHaHa&pid=Api&P=0&h=180'/>
 
-       </div>
+       </div> */}
 
 
 

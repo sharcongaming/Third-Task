@@ -365,30 +365,6 @@ const Home = () => {
         </div>
     </footer>
 
-
-    {/* footer */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="footerCopyright">
              <p>&copy; 2024 design and developed by <a href="#" class="developedBy">BlackHole Coding Crew</a>.</p>
         </div>
