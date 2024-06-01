@@ -3,7 +3,7 @@ import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 import { AuthContext } from '../Context/AuthContext';
-//  import "../Camponent/Style/Registr.css"
+ import "../Camponent/Style/Registr.css"
 const Register = () => {
     const {state} =useContext(AuthContext)
     const [userData, setUserData] = useState({  email: "", password: "", confirmPassword: "",})
@@ -57,36 +57,30 @@ const Register = () => {
         <div className='here'>
         <div className='from-box'>
       <div className='button-box'>
-        <button></button>
-        {/* <div className='btn'> </div> */}
-      <button type='button' className='toogle-button' >Sign Up</button>
-      <button type='button' className='toogle-button' >Register</button>
+      <button type='button' className='button-register' >Sign Up</button>
     
        </div>
-       {/* <div className='socail-icons'>
+       <div className='socail-icons'>
         <img src='https://www.shareicon.net/data/2016/07/10/119930_google_512x512.png'/>
         <img src='https://tse3.mm.bing.net/th?id=OIP.aubU2lXxC1ZmPDdf-koomwHaH_&pid=Api&P=0&h=180'/>
         <img src='https://tse4.mm.bing.net/th?id=OIP.H836RvDYYgQZcZn0TC8qBAHaHa&pid=Api&P=0&h=180'/>
 
-       </div> */}
-
-
-
-
+       </div>
         <div className='body-first'>
-            <h1 style={{marginTop:"10%"}}>Register</h1>
-            <form input-group   onSubmit={handleSubmit}>
-                <label>Your Email</label><br />
+            <form  className='form-first'  onSubmit={handleSubmit}>
+                <label className='label'> Email *</label><br />
                 <input className='input-field' type='email' onChange={handleChange} name='email' value={userData.email} /><br />
-                <label>Password</label><br />
+                <label   className='label '>  Password *</label><br />
                 <input className='input-field' type='password' onChange={handleChange} name='password' value={userData.password} /><br />
-                <label>Confirm Password</label><br />
+                <label  className='label' >   Confirm Password *</label><br />
                 <input className='input-field'  type='password' onChange={handleChange} name='confirmPassword' value={userData.confirmPassword} /><br />
                 <input  className='submit-btn' type='submit' value='Register' /><br />
             </form>
-            {/* <button className='submit' onClick={()=> router('/login')}>Login</button> */}
-            <p style={{color:"red"}} onClick={()=> router('/login')}>Already have Acount Click Here?</p>
-            <input type='checkbox' className='chect-box'/> <span> I Agree to the terms & condition</span><br/>
+            <div className='policy'>
+            <p  onClick={()=> router('/login')}>New Acount <b style={{color:"black"}}>Click Here?</b> <br/> <span>I Agree to the terms & condition</span></p>
+
+            </div>
+        
         </div>
 
         </div>

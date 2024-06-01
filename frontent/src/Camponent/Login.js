@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 import { AuthContext } from '../Context/AuthContext';
 // import api from './apiConfig/index';
-// import "../Camponent/Style/Login.css"
+import "../Camponent/Style/Login.css"
 
 
 
@@ -41,7 +41,7 @@ const Login = () => {
             toast.error("All fields are mandtory.")
         }
     }
-    console.log(userData, "userData")
+    // console.log(userData, "userData")
 
 
     useEffect(() => {
@@ -55,30 +55,29 @@ const Login = () => {
         <div className='here'>
                  <div className='from-box'>
                   <div className='button-box'>
-                  <button></button>
-                   {/* <div className='btn'> </div> */}
-                  <button type='button' className='toogle-button'>Sign Up</button>
-                  <button type='button' className='toogle-button'>Login</button>
+                  <button type='button' className='button-login'>Login</button>
                 
                    </div>  
-                   {/* <div className='socail-icons'>
+                   <div className='socail-icons'>
                     <img src='https://www.shareicon.net/data/2016/07/10/119930_google_512x512.png'/>
                     <img src='https://tse3.mm.bing.net/th?id=OIP.aubU2lXxC1ZmPDdf-koomwHaH_&pid=Api&P=0&h=180'/>
                      <img src='https://tse4.mm.bing.net/th?id=OIP.H836RvDYYgQZcZn0TC8qBAHaHa&pid=Api&P=0&h=180'/>
         
-                    </div>  */}
+                    </div> 
         <div  className='body-first'>
-            <h1>Login</h1>
-            <form  input-group onSubmit={handleSubmit}>
-                <label className='email'>Email</label><br />
-                <input  className='input-field' type='email' onChange={handleChange} name='email' value={userData.email} /><br />
-                <label>Password</label><br />
-                <input  className='input-field' type='password' onChange={handleChange} name='password' value={userData.password} /><br />
-                <input  className='submit-btn' type='submit' value='Login' /><br />
+            <form  className='form-login'  onSubmit={handleSubmit}>
+                <label  className='label-login'>Email*</label><br />
+                <input  className='input-field-login'   type='email' onChange={handleChange} name='email' value={userData.email} /><br />
+                <label   className='label-login' >Password*</label><br />
+                <input   className='input-field-login' type='password' onChange={handleChange} name='password' value={userData.password} /><br />
+                <input  className='submit-btn-login'  type='submit' value='Login' /><br />
             </form>
-            <input type='checkbox' className='chect-box'/> <span> I Agree to the terms & condition</span><br/>
-            {/* <button  className='submit' onClick={() => router('/register')}>Register</button> */}
-            <p style={{color:"red"}}  onClick={() => router('/register')}>New Register</p>
+         <div className=' privcy-polcy'>
+            <p  onClick={()=> router('/register')}>New Acount <b style={{color:"black"}}>Click Here?</b> <br/> <span>I Agree to the terms & condition</span></p>
+         {/* <p  onClick={()=> router('/register')}> <span>New Acount<b style={{color:"black"}}> Click Here?</b> <br/>     
+                    <input type='checkbox' className='chect-box'/> <span  style={{color:"red"}}>   I Agree to the terms & condition</span><br/>
+</span></p> */}
+         </div>
         </div>
         </div>
         </div>

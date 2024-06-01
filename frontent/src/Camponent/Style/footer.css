@@ -48,7 +48,7 @@ ul{
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    /* background-color: #e91e63; */
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -102,5 +102,32 @@ font-size: 25px;
       
     }
   }
+
+
+  
+.footerCopyright{
+    background-color: #BBF3F4;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    /* border: 5px solid black; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 40;
+}
+
+.footerCopyright p{
+    text-align: center;
+}
+
+.developedBy{
+    font-weight: bold;
+    color: var(--white);
+    color: red;
+}
   
 

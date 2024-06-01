@@ -1,5 +1,5 @@
 import React from 'react'
-// import "../Camponent/Style/footer.css"
+  import "../Camponent/Style/footer.css"
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -23,9 +23,9 @@ const Footer = () => {
       <div className='footer-col'>
         <h4>Contact Us</h4>
         <ul>
-          <li> <a href='#'>sahil</a></li>
-          <li> <a href='#'>Phone</a></li>
-          <li> <a href='#'>Adress</a></li>
+          <li> <a href='#'>blackhole@gmail.com</a></li>
+          <li> <a href='#'>9856*******</a></li>
+          <li> <a href='#'>MotilalNagar</a></li>
         </ul>
 
       </div>
@@ -59,7 +59,11 @@ const Footer = () => {
   </div>
 
 </footer>
+<div class="footerCopyright">
+             <p>&copy; 2024 design and developed by <a href="#" class="developedBy">BlackHole Coding Crew</a>.</p>
+        </div>
 </div>
+
   
 
 
