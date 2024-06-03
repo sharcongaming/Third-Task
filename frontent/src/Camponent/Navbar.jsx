@@ -23,6 +23,8 @@ const Navbar = () => {
         </div>
       </div>
       <div  className='second-navigation'>
+              <h4 onClick={() => router('/profile')}>{state.user.email} web</h4>
+
        <p onClick={()=> router('/game')}> Game</p>
        <p onClick={()=> router('/about')}>About</p>
        <p onClick={()=> router('/Tournaments')}>Tournaments</p>
@@ -39,7 +41,7 @@ const Navbar = () => {
       {state?.user &&  <p>user</p>}
       {state?.user  &&<p  onClick={()=>dispatch({type:"LOGOUT"})}>Logout</p>}
       </>: <p style={{color:"red"}} onClick={()=> router('/register')} >Register</p>}
-
+      {/* <h4 onClick={() => router('/profile')}>{state.user.email}</h4> */}
      </div>
     </div>
 

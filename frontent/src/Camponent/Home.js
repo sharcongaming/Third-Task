@@ -221,6 +221,9 @@ const Home = () => {
 
             <div  class="contact" id="contact">
                               <h2 class="heading" > Contact <span>Me</span></h2>
+                              Say Hello..!
+Fill up this form to reach our stunning Streamit team and click on send message.
+
                               <form action="#">
                                     <div class="input-box">
                                           <input type="text" placeholder="Full Name"/>
@@ -242,10 +245,12 @@ const Home = () => {
 
             <div  className='Tournaments'>
 
+              
+
             </div>
 
 
-            
+
 
 
 
