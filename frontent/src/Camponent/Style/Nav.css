@@ -8,7 +8,7 @@
     border: 2px solid rgb(173, 29, 29);
     height: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,13 +29,16 @@
 
 .second-navigation{
     border: 3px solid black; 
-    width: 75%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
 
 } 
 .second-navigation>p{
     color: white;
+}
+.second-navigation>p:hover{
+    color: red;
 }
 .serch-bar{
     /* border: 1px solid red; */

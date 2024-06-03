@@ -8,6 +8,8 @@ const Navbar = () => {
       
   const router = useNavigate()
   const {state,dispatch} =  useContext (AuthContext)
+
+
   
   return (
     <div>
@@ -25,18 +27,17 @@ const Navbar = () => {
        <p onClick={()=> router('/about')}>About</p>
        <p onClick={()=> router('/Tournaments')}>Tournaments</p>
     <p onClick={()=> router('/Contact')}>Contact</p>
-    <div id="search">
+    {/* <div id="search">
           <div  className='serch-bar'>
-            {/* <i class="fa-solid fa-magnifying-glass"></i> */}
             <input
               type="text"
               placeholder="Search Games.........."
             />
           </div>
-          </div>
+          </div> */}
      {state?.user?.email? <>
-      {state?.user && <h2>user</h2>}
-      {state?.user  &&<h2  onClick={()=>dispatch({type:"LOGOUT"})}>Logout</h2>}
+      {state?.user &&  <p>user</p>}
+      {state?.user  &&<p  onClick={()=>dispatch({type:"LOGOUT"})}>Logout</p>}
       </>: <p style={{color:"red"}} onClick={()=> router('/register')} >Register</p>}
 
      </div>

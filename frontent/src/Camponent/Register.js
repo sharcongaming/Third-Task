@@ -23,8 +23,6 @@ const Register = () => {
         if (userData.email && userData.password && userData.confirmPassword ) {
             if (userData.password === userData.confirmPassword){
 
-
-                // const response = await api.post("http://localhost:8000/register", {userData});
                 const response = await axios.post(" http://localhost:8000/register", { userData });
                 if (response.data.success) {
 
@@ -42,7 +40,7 @@ const Register = () => {
             toast.error("All field are mandtory...")
         }
     }
-    // console.log(userData, "userData")
+     console.log(userData, "userData")
 
 
     useEffect(() => {
@@ -77,7 +75,7 @@ const Register = () => {
                 <input  className='submit-btn' type='submit' value='Register' /><br />
             </form>
             <div className='policy'>
-            <p  onClick={()=> router('/login')}>New Acount <b style={{color:"black"}}>Click Here?</b> <br/> <span>I Agree to the terms & condition</span></p>
+            <p  onClick={()=> router('/login')}>New Acount <b  style={{color:"black"}}> Click Here? </b> <br/> <span>I Agree to the terms & condition</span></p>
 
             </div>
         
