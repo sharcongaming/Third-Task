@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../Context/AuthContext'
 import "./Style/Nav.css"
-import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
       
@@ -23,7 +22,7 @@ const Navbar = () => {
         </div>
       </div>
       <div  className='second-navigation'>
-              <h4 onClick={() => router('/profile')}>{state.user.email} web</h4>
+              {/* <h4 onClick={() => router('/profile')}>{state.user.email} web</h4> */}
 
        <p onClick={()=> router('/game')}> Game</p>
        <p onClick={()=> router('/about')}>About</p>
