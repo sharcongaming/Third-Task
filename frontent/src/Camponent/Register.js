@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 import { AuthContext } from '../Context/AuthContext';
  import "../Camponent/Style/Registr.css"
+
+
 const Register = () => {
     const {state} =useContext(AuthContext)
     const [userData, setUserData] = useState({  email: "", password: "", confirmPassword: "",})
     // console.log(userData,"-userData")
-
-    
     const router = useNavigate()
 
     const handleChange = (event) => {

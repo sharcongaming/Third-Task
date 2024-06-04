@@ -22,7 +22,6 @@ const Login = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         if (userData.email && userData.password) {
-            // const response = await api.post("/login", { userData });
             const response = await axios.post("http://localhost:8000/login", { userData });
             if (response.data.success) {
                 dispatch({
@@ -49,6 +48,8 @@ const Login = () => {
             router('/')
         }
     }, [state])
+
+    
     return (
 
 
@@ -68,15 +69,13 @@ const Login = () => {
             <form  className='form-login'  onSubmit={handleSubmit}>
                 <label  className='label-login'>Email*</label><br />
                 <input  className='input-field-login'   type='email' onChange={handleChange} name='email' value={userData.email} /><br />
-                <label   className='label-login' >Password*</label><br />
+                <label   className='label-login'  >Password*</label><br />
                 <input   className='input-field-login' type='password' onChange={handleChange} name='password' value={userData.password} /><br />
                 <input  className='submit-btn-login'  type='submit' value='Login' /><br />
             </form>
          <div className=' privcy-polcy'>
             <p  onClick={()=> router('/register')}>New Acount <b style={{color:"black"}}>Click Here?</b> <br/> <span>I Agree to the terms & condition</span></p>
-         {/* <p  onClick={()=> router('/register')}> <span>New Acount<b style={{color:"black"}}> Click Here?</b> <br/>     
-                    <input type='checkbox' className='chect-box'/> <span  style={{color:"red"}}>   I Agree to the terms & condition</span><br/>
-</span></p> */}
+
          </div>
         </div>
         </div>
