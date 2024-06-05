@@ -10,7 +10,7 @@
 
 .navigation{
     width: 100%;
-    border: 2px solid rgb(173, 29, 29);
+    /* border: 2px solid rgb(173, 29, 29); */
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -85,6 +85,7 @@
     position: relative;
     display: inline-block;
     background-color: black;
+    width: 100%;
      /* Ensures the button stays inline */
   }
 
@@ -128,6 +129,26 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .drop-div{
+    border: 4px solid red;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .first-child{
+    width: 50%;
+    height: 30px;
+    border: 1px solid black;
+  }
+.second-child{
+    width: 40%;
+    height: 30px;
+    border: 1px solid black;  
+}
+
+
+
 
 
 

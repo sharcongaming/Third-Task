@@ -49,6 +49,15 @@ if (dropbtn) {
         <div   class="dropdown">
   <button class="dropbtn">Profile</button>
   <div class="dropdown-content">
+   <div className='drop-div'>
+    <div className='first-child'>
+      </div> 
+       <div className='second-child'></div>
+
+    </div> 
+    <a href="#">Settings</a>
+    <a href="#">Account</a>
+    <a href="#">Logout</a>
     <a href="#">Settings</a>
     <a href="#">Account</a>
     <a href="#">Logout</a>
