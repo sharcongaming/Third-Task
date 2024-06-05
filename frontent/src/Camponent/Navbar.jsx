@@ -38,10 +38,10 @@ if (dropbtn) {
       </div>
       <div  className='second-navigation'>
 
-       <p onClick={()=> router('/game')}> Game</p>
+       <p onClick={()=> router('/gaming')}> Game</p>
        <p onClick={()=> router('/about')}>About</p>
        <p onClick={()=> router('/Tournaments')}>Tournaments</p>
-    <p onClick={()=> router('/Contact')}>Contact</p>
+    <p onClick={()=> router('/login')}>Contact</p>
   
      {state?.user?.email? <>
      {/* // DropDown=Section */}

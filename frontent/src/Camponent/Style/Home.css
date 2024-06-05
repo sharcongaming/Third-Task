@@ -8,6 +8,10 @@
     outline: none;
     scroll-behavior: smooth;
     }
+    .gradient-background {
+        background: linear-gradient(to right, #191f36, #8c9eff);
+        background-repeat: no-repeat;
+      }
 :root{
   --bg-color:#191f36;
   --snd-bg-color: #262840;
@@ -42,6 +46,7 @@ body{
 /* *** Scrolling bar ***** */
 .home-page-screen{
    border: 2px solid black;
+   
 }
 .container-page{
     /* border: 5px solid red; */
@@ -78,7 +83,7 @@ body{
     margin-top: 20%;
 }
 .home-content {
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 .home-content h3{
    font-size: 3.2rem; 
@@ -129,6 +134,13 @@ section{
 .socail-media{
     /* border: 2px solid red; */
 }
+.gradient-text {
+    background-image: linear-gradient(to right,  /* Direction of the gradient */
+                                   #f3ec78,  /* Starting color */
+                                   #af4261); /* Ending color */
+    background-clip: text;  /* Clip background to the text */
+    color: transparent;    /* Make the text color transparent */
+  }
 .socail-media a{
     display: inline-flex;
     justify-content: center;

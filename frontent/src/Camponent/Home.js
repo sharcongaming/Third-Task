@@ -1,8 +1,12 @@
 import React from 'react'
-// import "./Style/Home.css"
+import { useNavigate } from 'react-router-dom'
 
+import "./Style/Home.css"
+
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"></link>
 
 const Home = () => {
+    const router = useNavigate()
 
 //   const typed = new Typed(".multiple-text",{
 //     strings:["Softwere devloper","Frontend ","Backend"],
@@ -15,6 +19,7 @@ const Home = () => {
 
 
     // start main Screen************
+    <div class="gradient-background">
 
     <div className='home-page-screen'>
 
@@ -32,9 +37,9 @@ const Home = () => {
                   <h1>New Home </h1>
                   <h3> For GameLovers <span class="multiple-text"></span></h3> */}
                    <h3>Gaming</h3>
-                  <h1>A New Home For GameLovers</h1> 
-                   <h3>A New Home For GameLovers  <span class="multiple-text"></span></h3> 
-                  <p> 
+                  <h1 className='gradient-text'>"Let's make this world our playground!"</h1> 
+                   <h3 className='gradient-text'>A New Home For GameLovers  <span class="multiple-text"></span></h3> 
+                  <p  className='gradient-text'> 
                   Gaming is usually played individually 
               or with multiple players locally or online
                on either a dedicated video game console,
@@ -49,7 +54,6 @@ const Home = () => {
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin "></i></a>
                   </div>
-                  {/* <button className='btn'>Join Now</button> */}
                   <a href="#" class="btn">Join Now</a>
 
             </div>
@@ -68,10 +72,10 @@ const Home = () => {
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2>CODEX GAMES</h2>
+                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/">All GAMES</a>
+                    <a href="/gaming">All GAMES</a>
                 </div>
             </div>
 
@@ -79,10 +83,10 @@ const Home = () => {
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2>CODEX GAMES</h2>
+                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/">All GAMES</a>
+                    <a href="/gaming">All GAMES</a>
                 </div>
             </div>
 
@@ -90,40 +94,42 @@ const Home = () => {
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2>CODEX GAMES</h2>
+                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/">All GAMES</a>
+                    <a href="/gaming">All GAMES</a>
                 </div>
             </div>
             <div class="cbox">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2>CODEX GAMES</h2>
+                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/">All GAMES</a>
+                    <a href="/gaming">All GAMES</a>
                 </div>
             </div>
             <div class="cbox">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2>CODEX GAMES</h2>
+                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/">All GAMES</a>
+                    <a href="/gaming">All GAMES</a>
                 </div>
             </div>
             <div class="cbox">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2>CODEX GAMES</h2>
+                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/">All GAMES</a>
+                        {/* <a  style={{color:"red", borderBottom:"1px solid black"}}  onClick={()=> router('/gaming')}>All GAMES</a> */}
+
+                    <a href="/gaming">All GAMES</a>
                 </div>
             </div>
             
@@ -256,6 +262,7 @@ Fill up this form to reach our stunning Streamit team and click on send message.
 
 
         </div>
+      </div>
       </div>
       </div>
   )

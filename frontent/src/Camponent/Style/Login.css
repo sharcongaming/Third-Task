@@ -19,7 +19,7 @@ box-sizing: border-box;
          margin: 6% auto;
          background:#fff;
          padding: 5px;
-         border: 4px solid yellow    ;
+         /* border: 4px solid yellow    ; */
    
    }
    .button-box{
