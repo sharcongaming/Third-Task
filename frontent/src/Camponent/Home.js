@@ -7,7 +7,11 @@ import "./Style/Home.css"
 
 const Home = () => {
     const router = useNavigate()
-
+    document.addEventListener("mousemove", (event) => {
+        const cursor = document.getElementById("custom-cursor");
+        cursor.style.left = event.clientX + "px";
+        cursor.style.top = event.clientY + "px";
+      });
 //   const typed = new Typed(".multiple-text",{
 //     strings:["Softwere devloper","Frontend ","Backend"],
 //     typeSpeed:70,
@@ -17,7 +21,7 @@ const Home = () => {
 // });
   return (
 
-
+<div id="custom-cursor">
     // start main Screen************
     <div class="gradient-background">
 
@@ -55,6 +59,8 @@ const Home = () => {
                         <a href="#"><i class="fa-brands fa-linkedin "></i></a>
                   </div>
                   <a href="#" class="btn">Join Now</a>
+
+                  
 
             </div>
             <div class="Home-img">
@@ -262,6 +268,7 @@ Fill up this form to reach our stunning Streamit team and click on send message.
 
 
         </div>
+      </div>
       </div>
       </div>
       </div>

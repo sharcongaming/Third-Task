@@ -51,26 +51,34 @@ if (dropbtn) {
   <div class="dropdown-content">
    <div className='drop-div'>
     <div className='first-child'>
+    <a href="#">Settings</a>
       </div> 
-       <div className='second-child'></div>
-
+       <div className='second-child'>
+       <i  class="fa-solid fa-gear " ></i>
+       </div>
     </div> 
-    <a href="#">Settings</a>
-    <a href="#">Account</a>
-    <a href="#">Logout</a>
-    <a href="#">Settings</a>
-    <a href="#">Account</a>
-    <a href="#">Logout</a>
+    <div className='drop-div'>
+    <div className='first-child'>
+    <a href="#">Wallet</a>
+      </div> 
+       <div className='second-child'>
+       <i class="fa-solid fa-coins"></i>
+       </div>
+    </div> 
+    <div className='drop-div'>
+    <div className='first-child'>
+    <a href="#">Bitcoin</a>
+      </div> 
+       <div className='second-child'>
+       <i class="fa-brands fa-bitcoin"></i>
+       </div>
+    </div> 
   </div>
 </div>
-      
-
       }
       {state?.user  &&<p  onClick={()=>dispatch({type:"LOGOUT"})}>Logout</p>}
       </>: <p style={{color:"red"}} onClick={()=> router('/register')} >Register</p>}
-   
 </div>
-
      </div>
     </div>
 
@@ -79,107 +87,4 @@ if (dropbtn) {
 }
 
 export default Navbar
-
-
-
-// import React, { useContext, useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
-// import { AuthContext } from '../Context/AuthContext'
-// import "./Style/Nav.css"
-// const Navbar = () => {
-//   const { state, dispatch} = useContext(AuthContext);
-//   const [userData, setUserData] = useState({
-//     email: "",
-//     password: "",
-//     role: "",
-//   });
-//   const [dropdown, setDropdown] = useState(false);
-//   const router = useNavigate();
-
-//   useEffect(() => {
-//     if (state) {
-//       setUserData(state.user);
-//     }
-//   }, [state]);
-
-//   function down() {
-//     setDropdown(true);
-//   }
-
-//   function up() {
-//     setDropdown(false);
-//   }
-
-//   function Logoutt() {
-//     // localStorage.removeItem("token")
-//     dispatch({
-//       type: "LOGOUT",
-//     });
-//   }
-
-//   return (
-//     <div>
-//       {dropdown ? (
-//         <div onMouseLeave={up} id="myntrapop">
-//           {userData?.name ? (
-//             <div style={{ borderBottom: "1px solid grey" }}>
-//               <p>
-//                 <b>Hello {state?.user?.name}</b>
-//               </p>
-//               <p>85******99</p>
-//               <button onClick={Logoutt}>LOGOUT</button>
-//             </div>
-//           ) : (
-//             <div style={{ borderBottom: "1px solid grey" }}>
-//               <p>
-//                 <b>Welcome</b>
-//               </p>
-//               <p>To access account and manage orders</p>
-//               <p onClick={() => router("/register")}>
-//                 LOGIN/REGISTER
-//               </p>
-//             </div>
-//           )}
-
-      
-//         </div>
-//       ) : null}
-
-//       <div id="navbar">
-//         <div id="logo">
-//           <img
-//             onClick={() => router("/")}
-//           />
-//         </div>
-      
-       
-
-//         <div id="profile">
-//           <div>
-//             <i class="fa-solid fa-user fa-lg"></i>
-//             <p onClick={() => router("/profile")} onMouseOver={down}>
-//               Profile {userData?.email}
-//             </p>
-//           </div>
-//           <div>
-//             <i class="fa-solid fa-heart fa-lg"></i>
-//             <p>Wishlist</p>
-//           </div>
-         
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar
-
-
-
-
-
-
-
-       
-  
 

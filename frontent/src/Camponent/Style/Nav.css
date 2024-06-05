@@ -117,12 +117,12 @@
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block; /* Ensures each option takes up a full line */
+    display: block; 
+    
   }
   
   /* Hover effect for dropdown options */
   .dropdown-content a:hover {
-    background-color: #ddd;
   }
   
   /* Optional: Show the dropdown content on hover */
@@ -130,21 +130,41 @@
     display: block;
   }
   .drop-div{
-    border: 4px solid red;
+    /* border: 4px solid red; */
     margin-top: 5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
+  .drop-div:hover{
+    background-color: #ddd;
+  }
+  .drop-div a{
+    margin-bottom: 5%;
+
+  }
   .first-child{
     width: 50%;
-    height: 30px;
-    border: 1px solid black;
+    height: 45px;
+  }
+  .first-child>p{
+    color: #fff;
+  }
+  .first-child>a:hover{
+    color: red;
   }
 .second-child{
     width: 40%;
-    height: 30px;
-    border: 1px solid black;  
+    height: 45pxpx;
+    /* border: 1px solid black;   */
+}
+.second-child>i:hover{
+  color: #d80707;
+}
+.second-child>i{
+color: black;
+margin-right: 4%;
+margin-top: 10%;
 }
 
 
