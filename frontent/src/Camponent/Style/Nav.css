@@ -168,7 +168,48 @@ margin-top: 10%;
 }
 
 
+@media(max-width: 1118px){
+  .logo-navbar{
+    left: 8%;
+    top: 20px;
+    width: 130px;
+  }
 
+}
+
+@media (max-width: 944px){
+  .logo-navbar{
+    left: 8%;
+    top: 20px;
+    width: 130px;
+  }
+  .second-navigation>p{
+font-size: 17px;
+  }
+}
+@media (max-width: 860px){
+  .label#btn{
+    display: block;
+  }
+  .second-navigation>p{
+    position: fixed;
+   width: 100%;
+   height: 100vh;
+   top: 80px;
+   left: -100%;
+   text-align: center;
+   transition:all.5s ;
+  }
+  .second-navigation>p{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .second-navigation>p{
+    font-size: 20px;
+  }
+
+}
 
 
 

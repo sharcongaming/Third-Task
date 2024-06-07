@@ -39,9 +39,6 @@ const Home = () => {
 // });
   return (
 
-
-
-
     <div className="gradient-background">
 
     <div className='home-page-screen'>
