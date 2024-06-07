@@ -27,6 +27,46 @@ body{
     color: var(--text-color);
 } 
 
+
+/* cursor point */
+
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px red,
+                0 0 60px #cc0c0c,
+                0 0 20px rgb(151, 136, 136);
+    animation: colours 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  @keyframes colors {
+    0% {
+      filter: hue-rotate(360deg);
+    }
+
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
+
+  .cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+  }
+
 /* **** scrolling bar **** */
     ::-webkit-scrollbar{
     width:6px;
@@ -108,7 +148,7 @@ span{
 .Home-img>img{
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
-    /* border: 3px solid red; */
+    box-shadow: 0 0 10px #fff
 }
 @keyframes flotImage{
     0%{
@@ -127,6 +167,11 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;   
  
+   
+ }
+ .gaming-section>h2:hover{
+    color: black;
+    transition: color 0.3s ease-in-out
  }
 .home-content p{
    font-size: 1.6rem; 
@@ -140,6 +185,7 @@ section{
                                    #af4261); /* Ending color */
     background-clip: text;  /* Clip background to the text */
     color: transparent;    /* Make the text color transparent */
+    
   }
 .socail-media a{
     display: inline-flex;
@@ -197,10 +243,23 @@ section{
 
 }
 .cbox{
-    /* border: 1px solid red; */
     width: 30%;
     margin-top: 4%;
+    box-shadow: 0 0 10px #fff
 }
+
+.cbox>img:hover{
+  border-bottom: 2px solid red;
+  border-top:2px solid green ;
+  transform: scale(1.1);
+  
+}
+.cbox>h5{
+    display: block; /* Show the hover text on hover */
+    opacity: 1;
+}
+
+
 
 .container-filter-flex{
     /* border: 2px solid red; */
@@ -227,6 +286,16 @@ margin-left: 21%;
 .active>p{
     margin-top: 5%;
 }
+.container-filter-flex>:hover{
+    border: 2px solid black;
+
+}
+/* .container-filter-flex>:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: black;
+} */
 
 .active:hover{
     background: var(--main-color);
@@ -239,8 +308,10 @@ margin-left: 21%;
 .feature-games{
     /* border: 2px solid red; */
 }
+.feature-games>h1:hover{
+color: black;
+}
 .gamecards-container-flex{
-    border: 1px solid black;
     width: 90%;
     /* margin-left: 10%; */
 }
@@ -252,6 +323,7 @@ margin-left: 21%;
     flex-wrap: wrap;
     margin-top: 4%;
     height: 440px;
+    
     /* object-fit: cover; */
 
 }
@@ -260,7 +332,12 @@ margin-left: 21%;
     width: 30%;
     box-shadow: 0 0 10px #777;
     height: 440px;
+    box-shadow: 0 0 10px #fff
 
+}
+.cardimg:hover{
+    transform: scale(1.1);
+    border: 2px solid black  ;
 }
 .tegs {
     /* position: absolute; */

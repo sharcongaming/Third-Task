@@ -19,7 +19,7 @@ if (dropbtn) {
     dropdownContent.classList.toggle('show');
   });
 } else {
-  console.error("Element '.dropbtn' not found!");
+  console.error("Element 'dropbtn' not found!");
 }
 
 
@@ -40,7 +40,7 @@ if (dropbtn) {
 
        <p onClick={()=> router('/gaming')}> Game</p>
        <p onClick={()=> router('/about')}>About</p>
-       <p onClick={()=> router('/Tournaments')}>Tournaments</p>
+       <p onClick={()=> router('/PortFolio')}>PortFolio</p>
     <p onClick={()=> router('/login')}>Contact</p>
   
      {state?.user?.email? <>

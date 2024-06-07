@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.port-first-page{
+    border: 1px solid black;
+}
+
+.port-page{
+    width: 100%;
+    background: linear-gradient(to right, #191f36, #8c9eff);
+    background-repeat: no-repeat;
+    height: 600px;
+    border: 2px solid black;
+    margin-top: 5%;
+
+   
+}
+.gradient-text{
+    background-image: linear-gradient(to right,  /* Direction of the gradient */
+                                   #f3ec78,  /* Starting color */
+                                   #af4261); /* Ending color */
+    background-clip: text;  /* Clip background to the text */
+    color: transparent;    /* Make the text color transparent */
+    
+  }
+ 
+.text-div{
+    height: 80px;
+    width: 70%;
+    margin-left: 17%;
+    margin-top: 17%;
+
+}
+.second-port{
+    height: 600px;
+    border: 1px solid black;
+    
+  }
+  .second-port>h2{
+    margin-top: 5%;
+    font-size: 65px;
+    font-weight: bold;
+
+  }
+  .second-port>h2:hover{
+    color: red;
+  }
+  .port-dived{
+    width: 85%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 4%;
+
+  }
+  .second-port-div{
+    width: 30%;
+    border: 1px solid black;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff
+  }
+  .second-port-div>img{
+    width: 90%;
+    height: 320px;
+    margin-top: 3%;
+  }
+  .second-port-div>img:hover{
+    border: 2px black;
+    transform: scale(1.1);
+  }

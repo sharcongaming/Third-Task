@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
+
 
 import "./Style/Home.css"
 
@@ -7,11 +9,8 @@ import "./Style/Home.css"
 
 const Home = () => {
     const router = useNavigate()
-    document.addEventListener("mousemove", (event) => {
-        const cursor = document.getElementById("custom-cursor");
-        cursor.style.left = event.clientX + "px";
-        cursor.style.top = event.clientY + "px";
-      });
+
+      
 //   const typed = new Typed(".multiple-text",{
 //     strings:["Softwere devloper","Frontend ","Backend"],
 //     typeSpeed:70,
@@ -19,15 +18,34 @@ const Home = () => {
 //     backDelay:1000,
 //     loop:true
 // });
+
+// const cursor = document.querySelector(".cursor");
+// let timeout; // Define timeout variable outside the event listener
+
+// document.addEventListener("mousemove", (e) => {
+//   let x = e.pageX;
+//   let y = e.pageY;
+
+//   cursor.style.top = y + "px";
+//   cursor.style.left = x + "px";
+//   cursor.style.display = "block";
+
+//   // Clear any pending timeout before setting a new one
+//   clearTimeout(timeout);
+
+//   timeout = setTimeout(() => {
+//     cursor.style.display = "none";
+//   }, 1000); // Set timeout to hide cursor after 1 second
+// });
   return (
 
-<div id="custom-cursor">
-    // start main Screen************
-    <div class="gradient-background">
+
+
+
+    <div className="gradient-background">
 
     <div className='home-page-screen'>
 
-     {/* ********************** slider ********************** */}
 
       <div className='container-page'>
       <div class="mainDiv"></div>
@@ -37,12 +55,12 @@ const Home = () => {
 
       <section class="home" id="home">
             <div class="home-content">
-                {/* <h3>Gaming</h3>
+                <h3>Gaming</h3>
                   <h1>New Home </h1>
-                  <h3> For GameLovers <span class="multiple-text"></span></h3> */}
-                   <h3>Gaming</h3>
+                  <h3> For GameLovers <span class="multiple-text"></span></h3>
+                   {/* <h3>Gaming</h3>
                   <h1 className='gradient-text'>"Let's make this world our playground!"</h1> 
-                   <h3 className='gradient-text'>A New Home For GameLovers  <span class="multiple-text"></span></h3> 
+                   <h3 className='gradient-text'>A New Home For GameLovers  <span class="multiple-text"></span></h3>  */}
                   <p  className='gradient-text'> 
                   Gaming is usually played individually 
               or with multiple players locally or online
@@ -52,7 +70,7 @@ const Home = () => {
                   commonly connected to a TV, and the player
                    uses a
                controller to interact with the game.</p>
-                  <div class="socail-media">
+                  <div className="socail-media">
                         <a href="#"><i class="fa-brands fa-facebook "></i></a>
                         <a href="#"><i class="fa-brands fa-instagram "></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -79,7 +97,7 @@ const Home = () => {
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
+                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                     <a href="/gaming">All GAMES</a>
                 </div>
@@ -90,7 +108,7 @@ const Home = () => {
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
+                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                     <a href="/gaming">All GAMES</a>
                 </div>
@@ -101,7 +119,7 @@ const Home = () => {
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
+                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                     <a href="/gaming">All GAMES</a>
                 </div>
@@ -111,7 +129,7 @@ const Home = () => {
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
+                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                     <a href="/gaming">All GAMES</a>
                 </div>
@@ -121,21 +139,21 @@ const Home = () => {
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
+                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                     <a href="/gaming">All GAMES</a>
                 </div>
             </div>
             <div class="cbox">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
+                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                         {/* <a  style={{color:"red", borderBottom:"1px solid black"}}  onClick={()=> router('/gaming')}>All GAMES</a> */}
 
-                    <a href="/gaming">All GAMES</a>
+                    <a   href="/gaming">All GAMES</a>
                 </div>
             </div>
             
@@ -265,13 +283,11 @@ Fill up this form to reach our stunning Streamit team and click on send message.
 
 
 
-
-
+            </div>
+            </div>
         </div>
       </div>
-      </div>
-      </div>
-      </div>
+   
   )
 }
 
