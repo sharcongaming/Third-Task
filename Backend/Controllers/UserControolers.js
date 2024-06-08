@@ -84,6 +84,82 @@ export const Login = async (req, res) => {
 
 
 
+async function authenticate() {
+  const provider = await detectEthereumProvider();
+  const accounts = await provider.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+
+  const message = 'Please sign this message to authenticate with our service.';
+  const signature = await provider.request({
+    method: 'personal_sign',
+    params: [message, account]
+  });
+
+  // Send the signature to the backend for verification
+  const response = await fetch('/verify-signature', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ account, message, signature })
+  });
+
+  const result = await response.json();
+  if (result.success) {
+    console.log('Authenticated!');
+  } else {
+    console.log('Authentication failed');
+  }
+}
+
+
+app.get('/balance/:address', async (req, res) => {
+  const { address } = req.params;
+  try {
+    const balance = await web3.eth.getBalance(address);
+    res.json({ balance: web3.utils.fromWei(balance, 'ether') });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
+app.post('/verify-signature', (req, res) => {
+  const { account, message, signature } = req.body;
+  const recoveredAddress = recoverPersonalSignature({
+    data: message,
+    sig: signature
+  });
+
+  if (recoveredAddress.toLowerCase() === account.toLowerCase()) {
+    res.json({ success: true });
+  } else {
+    res.json({ success: false });
+  }
+});
+
+// Connect to MetaMask wallet
+const ethereum = window.ethereum;
+
+async function connectWallet() {
+  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  return accounts[0];
+}
+
+// Send tokens using MetaMask
+async function sendTokens(toAddress, amount) {
+  const account = await connectWallet();
+  const tx = await ethereum.request({
+    method: 'eth_sendTransaction',
+    params: [{
+      from: account,
+      to: toAddress,
+      value: web3.utils.toWei(amount.toString(), 'ether'),
+    }]
+  });
+  return tx;
+}
+
 
 
 

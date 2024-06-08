@@ -112,8 +112,8 @@
 </body>
 </html> -->
 
-<!-- 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <script src="https://kit.fontawesome.com/5cd5307fb0.js" crossorigin="anonymous"></script>
@@ -201,9 +201,9 @@
     });
   </script>
 </body>
-</html> -->
+</html>  -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -367,4 +367,50 @@ function myFunction() {
 
 
 
+ -->
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden; /* Hide scrollbars for a cleaner view */
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none; /* Makes the cursor element invisible to clicks */
+  transition: left 0.1s ease, top 0.1s ease; /* Smooth animation */
+}
+
+/* Listen for mouse movement and update cursor position */
+body:not(.hide-cursor) .cursor {
+  transform: translate(-50%, -50%);  /* Center the dot */
+}
+
+body:not(.hide-cursor) {
+  .mousemove: (event) => {
+    document.querySelector(".cursor").style.left = event.clientX + 'px';
+    document.querySelector(".cursor").style.top = event.clientY + 'px';
+  }
+}
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following Dot Cursor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Move your mouse around!</h1>
+    <div class="cursor"></div>
+</body>
+</html>
