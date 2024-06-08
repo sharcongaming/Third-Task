@@ -3,7 +3,7 @@ import express   from "express"
 import dotenv from "dotenv"
 import mongoose from "mongoose"
 import cors from 'cors'
-const Web3 = require('web3');
+// const Web3 = require('web3');
  import { Login, Register } from "./Controllers/UserControolers.js"
 // import Routes from './Routes/index.js'
 const app = express()

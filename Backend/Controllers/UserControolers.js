@@ -1,6 +1,7 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import UserModal from "../Modal/UserModal.js";
+import { Contract } from "ethers";
 
 
 
@@ -84,6 +85,23 @@ export const Login = async (req, res) => {
 
 
 
+// app.get("/number",async(req,res)=>{
+// const {number} = await Contract.method.getNumber().call();
+// res.json({number})
+
+// })
+
+// app.post("/number",async(req,res)=>{
+//   const {number} = req.body;
+//   const accounts = await web3.eth.getAccounts();
+//   const result = await Contract.methods
+//   .setNumber(number)
+//   .send({from:accounts[0]});
+//   res.json({message:"number set successfully"})
+
+// })
+
+
 async function authenticate() {
   const provider = await detectEthereumProvider();
   const accounts = await provider.request({ method: 'eth_requestAccounts' });
@@ -113,7 +131,7 @@ async function authenticate() {
 }
 
 
-app.get('/balance/:address', async (req, res) => {
+export const balance =  async (req, res) => {
   const { address } = req.params;
   try {
     const balance = await web3.eth.getBalance(address);
@@ -121,10 +139,10 @@ app.get('/balance/:address', async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-});
+};
 
 
-app.post('/verify-signature', (req, res) => {
+export const verifysignature = async(req, res) => {
   const { account, message, signature } = req.body;
   const recoveredAddress = recoverPersonalSignature({
     data: message,
@@ -136,10 +154,10 @@ app.post('/verify-signature', (req, res) => {
   } else {
     res.json({ success: false });
   }
-});
+};
 
 // Connect to MetaMask wallet
-const ethereum = window.ethereum;
+// const ethereum = window.ethereum;
 
 async function connectWallet() {
   const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
@@ -147,6 +165,7 @@ async function connectWallet() {
 }
 
 // Send tokens using MetaMask
+
 async function sendTokens(toAddress, amount) {
   const account = await connectWallet();
   const tx = await ethereum.request({

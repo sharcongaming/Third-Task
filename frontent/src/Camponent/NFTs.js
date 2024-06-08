@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Connection, PublicKey } from '@solana/web3.js';
+// import { Connection, PublicKey } from '@solana/web3.js';
 // import { PhantomProvider } from '@phantomwallet/providers';
 
 const NFTs = () => {

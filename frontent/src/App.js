@@ -11,6 +11,7 @@ import { Game } from './Camponent/Game';
 import Portfolio from './Camponent/Portfolio';
 import Balance from './Camponent/Balance';
 import NFTs from './Camponent/NFTs';
+import MyWallet from './Camponent/MyWallet';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route exact path='/PortFolio'element={<Portfolio/>}/>
       <Route exact path='/balancse'element={<Balance/>}/>
       <Route exact path='/nfts'element={<NFTs/>}/>
+      <Route exact path='/my-wallet'element={<MyWallet/>}/>
+
 
 
 
