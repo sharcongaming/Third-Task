@@ -2,6 +2,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import UserModal from "../Modal/UserModal.js";
 import { Contract } from "ethers";
+// import web3 from './utils/web3';
 
 
 
@@ -83,26 +84,18 @@ export const Login = async (req, res) => {
   }
 };
 
+export const Number = async (req, res) => {
+  const {number} = req.body;
+  const accounts = await web3.eth.getAccounts();
+  const result = await Contract.methods
+  .setNumber(number)
+  .send({from:accounts[0]});
+  res.json({message:"number set successfully"})
+
+}
 
 
-// app.get("/number",async(req,res)=>{
-// const {number} = await Contract.method.getNumber().call();
-// res.json({number})
-
-// })
-
-// app.post("/number",async(req,res)=>{
-//   const {number} = req.body;
-//   const accounts = await web3.eth.getAccounts();
-//   const result = await Contract.methods
-//   .setNumber(number)
-//   .send({from:accounts[0]});
-//   res.json({message:"number set successfully"})
-
-// })
-
-
-async function authenticate() {
+export const  authenticate = async (req,res)=> {
   const provider = await detectEthereumProvider();
   const accounts = await provider.request({ method: 'eth_requestAccounts' });
   const account = accounts[0];
@@ -113,22 +106,12 @@ async function authenticate() {
     params: [message, account]
   });
 
-  // Send the signature to the backend for verification
-  const response = await fetch('/verify-signature', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ account, message, signature })
-  });
-
-  const result = await response.json();
-  if (result.success) {
-    console.log('Authenticated!');
-  } else {
-    console.log('Authentication failed');
-  }
 }
+  
+
+ 
+  
+
 
 
 export const balance =  async (req, res) => {

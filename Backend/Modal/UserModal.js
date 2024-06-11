@@ -13,10 +13,18 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-  
+    balance: {
+        userId: String,
+        balance: Number,
+        coins: Number
+    },
+    number:{
+        type: Number,
+        required: true
+    },
 
 })
 export default mongoose.model("User", userSchema)
 
 
-// 103.216.68.225/32
+
