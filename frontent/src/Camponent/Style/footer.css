@@ -9,9 +9,9 @@ box-sizing: border-box;
 width: 100%;
 }
 .screen{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
-    border-color: black;
+    /* border-color: black; */
 }
 .firstfooter{
     max-width: 1170px;
@@ -102,9 +102,6 @@ font-size: 25px;
       
     }
   }
-
-
-  
 .footerCopyright{
     background-color: #BBF3F4;
     padding: 1em;

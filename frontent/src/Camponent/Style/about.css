@@ -11,6 +11,14 @@
     border: 2px solid black;
     margin-top: 5%;
 }
+/* 
+.parllax-inner{
+  background-image: url("https://img.freepik.com/free-photo/rainbow-light-watercolor-stains_125540-2250.jpg?w=996&t=st=1718110122~exp=1718110722~hmac=e92dbeb712fc28d4f25db9ea220bf5e4d02ae23ae6f886409d426d5a3f83f1fc");
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+} */
 .about-first-page{  
     border: 1px solid black;
 }
@@ -26,10 +34,16 @@
                                    #af4261); /* Ending color */
     background-clip: text;  /* Clip background to the text */
     color: transparent;   
-    font-size: 50px;
+    font-size: 25px;
+    animation: slow-motion 5s ease-in-out infinite alternate;
+
+
 }
 .second-port-about{
     height: 600px;
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%
     /* border: 1px solid black; */
     
   }
@@ -46,6 +60,7 @@
     width: 25%;
   }
   .second-child{
+    border-bottom: 1px solid gray;
     /* border: 1px solid black; */
     width: 60%;
    
@@ -61,10 +76,19 @@ color: transparent;
     width: 80%;
     margin-left: 8%;
     margin-top: 8%;
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 100%;
+    animation: slow-motion 5s ease-in-out infinite alternate;
+
+  }
+  .about-last:hover{
+    border-bottom: 1px solid gray;
 
   }
   .about-last>p{
-    font-size: 35px;
+    font-size: 25px;
+    
   }
   .our-team{
     /* border: 1px solid black; */
@@ -76,11 +100,18 @@ color: transparent;
     margin-left: 30%;
     margin-top: 5%;
     border-radius:40px ;
-  
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    transform: translateY(-10px);
+    animation: CSSscrollReveal ease-in-out both;
 background: linear-gradient(to right, #191f36, #8c9eff);
 
 
+
   }
+
+ 
   .myteam:hover{
     border: 2px solid black;
  
@@ -90,16 +121,33 @@ background: linear-gradient(to right, #191f36, #8c9eff);
   }
   
   .our-team-div{
+    height: 400px;
     width: 80%;
+    border-bottom: 1px solid gray;
     margin-left: 8%;
     margin-top: 3%;
     display: flex;
     justify-content: space-around;
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%
+  }
+  @keyframes CSSscrollReveal{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
   }
   .team-first-child{
     /* border: 1px solid black; */
     width: 40%;
-
+   
+  
+  
   }
   .team-second-child{
     /* border: 1px solid black; */
@@ -128,18 +176,36 @@ background: linear-gradient(to right, #191f36, #8c9eff);
    transform: scale(1.1);
    }
    .about-us{
-    /* border: 1px solid black; */
+    height: 300px;
     width: 50%;
     margin-left: 50%;
     margin-top: 4%;
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation: slow-motion 5s ease-in-out infinite alternate;
+
+
    }
    .our-client-page{
+    border-bottom: 1px solid gray;
     width: 80%;
     margin-left: 8%;
     margin-top: 5%;
     display: flex;
+    height: 300px;
     justify-content: space-around;
+    animation: slow-motion 5s ease-in-out infinite alternate;
+
    }
+   @keyframes slow-motion {
+  0% {
+    transform: translateY(0); /* Start at top */
+  }
+  100% {
+    transform: translateY(20px); /* Move down slightly on animation */
+  }
+}
    .our-client{
     /* border: 1px solid black; */
     width: 40%;
@@ -148,5 +214,5 @@ background: linear-gradient(to right, #191f36, #8c9eff);
    }
    .our-clint-sec{
     /* border: 1px solid black; */
-    width: 50%;
+    width: 60%;
    }

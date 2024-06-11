@@ -37,6 +37,24 @@ const Home = () => {
 //     cursor.style.display = "none";
 //   }, 1000); // Set timeout to hide cursor after 1 second
 // });
+
+window.addEventListener("scroll",reveal);
+function reveal(){
+    var reveals = document.querySelectorAll(".reveal");
+for(var i = 0; i < reveals.length; i++){
+var windowheight  = window.innerHeight;
+var revealtop = reveals[i].getBoundingClientRect().revealtop
+var revealpoint = 150;
+
+if(revealtop < windowheight - revealpoint){
+    reveals[i].classList.add("active")
+}
+else{
+    reveals[i].clasList.remove("active")
+}
+}
+}
+
   return (
 
     <div className="gradient-background">
@@ -45,7 +63,7 @@ const Home = () => {
 
 
       <div className='container-page'>
-      <div class="mainDiv"></div>
+      <div class="mainDiv">  </div>
 
       {/* Home Banner */}
 
@@ -96,7 +114,7 @@ const Home = () => {
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/gaming">All GAMES</a>
+                        <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
 
@@ -107,7 +125,7 @@ const Home = () => {
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/gaming">All GAMES</a>
+                        <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
 
@@ -118,7 +136,7 @@ const Home = () => {
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/gaming">All GAMES</a>
+                        <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
             <div class="cbox">
@@ -128,7 +146,7 @@ const Home = () => {
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/gaming">All GAMES</a>
+                        <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
             <div class="cbox">
@@ -138,7 +156,7 @@ const Home = () => {
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                    <a href="/gaming">All GAMES</a>
+                        <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
             <div class="cbox">
@@ -148,9 +166,7 @@ const Home = () => {
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
-                        {/* <a  style={{color:"red", borderBottom:"1px solid black"}}  onClick={()=> router('/gaming')}>All GAMES</a> */}
-
-                    <a   href="/gaming">All GAMES</a>
+                  <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
             
@@ -171,7 +187,7 @@ const Home = () => {
             <div className='feature-games'>
               <h1>FEATURE GAMES </h1>
 
-                <div class="gamecards-container-flex">
+                <div class="gamecards-container-flex ">
             <div class="cardsection">
                 <div class="cardimg">
              
@@ -191,7 +207,7 @@ const Home = () => {
                             <a href="/">PLAYSTATION </a>
                         </h3>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, sequi.</p>
+                    <p className='gradient-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, sequi.</p>
                 </div>
             </div>
          
@@ -214,7 +230,7 @@ const Home = () => {
                  <a href="/">PLAYSTATION </a>
              </h3>
          </div>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, sequi.</p>
+         <p className='gradient-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, sequi.</p>
      </div>
  </div>
 
@@ -237,37 +253,16 @@ const Home = () => {
                
              </h3>
          </div>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, sequi.</p>
+         <p className='gradient-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, sequi.</p>
      </div>
  </div>
             </div>
               </div>
               </div>
             {/* Contact Section */}
-            <div className='contact-section'>
+           <div className='new-add-content'>
 
-            <div  class="contact" id="contact">
-                              <h2 class="heading" > Contact <span>Me</span></h2>
-                              Say Hello..!
-Fill up this form to reach our stunning Streamit team and click on send message.
-
-                              <form action="#">
-                                    <div class="input-box">
-                                          <input type="text" placeholder="Full Name"/>
-                                          <input type="email" placeholder="Email Adress"/>
-                                    </div>
-                                    <div class="input-box">
-                                          <input type="number" placeholder=" Mobile Number"/>
-                                          <input type="text" placeholder="Email Subject"/>
-                                    </div>
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                                    <input type="submit" value="Send Message" class="btn"/>
-                              </form>
-                        </div>
-            </div>
-            <div >
-
-            </div>
+           </div>
             {/* ****************Tournaments******************* */}
 
             <div  className='Tournaments'>

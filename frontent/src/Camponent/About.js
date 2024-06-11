@@ -3,7 +3,7 @@ import "./Style/about.css"
 const About = () => {
   return (
     <div className='about-first-page'>
-
+  <div class="parllax-inner">
 <div className='port-page-about'>
             <div className='text-div-about'>
             <h2 className='gradient-text-about'>In the realm of game development,
@@ -47,7 +47,7 @@ specializing in creating engaging digital products.</p>
                   <div className='team-first-child'>
                     <div className='myteam'><p>OurTeam</p></div>
                     <h2>We craft dreams!</h2>
-                    <p>We are Alone Clone Studios. We create award-winning games
+                    <p className='gradient-text-about-p'> We are Alone Clone Studios. We create award-winning games
                       , remarkable memories and cutting-edge experiences</p>
                   </div>
                   <div className='team-second-child'>
@@ -66,7 +66,7 @@ specializing in creating engaging digital products.</p>
 <div className='about-us'>
   <h2>
 About us.</h2>
-<p>Alone Clone Studios is a cutting-edge game
+<p className='gradient-text-about-p'>Alone Clone Studios is a cutting-edge game
    development powerhouse with a passion for crafting
     immersive gaming experiences. Our journey began with a 
     simple belief: that gaming has the power to transcend
@@ -84,10 +84,11 @@ About us.</h2>
 </div>
 <div className='our-clint-sec'>
 
+
 </div>
 </div>
 
-
+</div>
     </div>
   )
 }

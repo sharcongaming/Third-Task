@@ -18,3 +18,126 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
+
+
+.cbox{
+    width: 30%;
+    margin-top: 4%;
+    box-shadow: 0 0 10px #fff
+}
+
+.cbox>img:hover{
+  border-bottom: 2px solid red;
+  border-top:2px solid green ;
+  transform: scale(1.1);
+  transition: transform 0.6s ease-out;
+
+  
+}
+.cbox>h5{
+    display: block; /* Show the hover text on hover */
+    opacity: 1;
+}
+
+.about-more{
+   border: 1px solid  rgb(72, 72, 182);
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 30%;
+    transition: transform 0.3s ease;
+}
+.about-more:hover{
+    transform: translateY(-5px);
+  box-shadow: 0 0 10px 0 rgb(89, 89, 182);
+    /* transform: rotate(5deg); */
+    transform: translateY(-5px);  
+    /* transform: scale(1.1); */
+
+}
+.about-more>b{
+    font-size: 12px;
+}
+.about-more>b:hover{
+   color: rgb(89, 89, 182);
+   
+    
+}
+.Text-Conten{
+    /* border: 2px solid black; */
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+  
+  .content-container {
+    display: flex; /* Arrange content items horizontally */
+    flex-wrap: wrap; /* Allow content to wrap if necessary */
+    margin: 0 auto; /* Center the container horizontally */
+    width: 80%; /* Adjust width as needed */
+    padding: 20px;
+    /* border: 2px solid red; */
+    width: 30%;
+  }
+  
+  .content-item {
+    margin-bottom: 20px;
+    text-align: center; /* Center content within each item */
+  }
+  
+  .text {
+    /* Styles for text content */
+  }
+  
+  .image img {
+    width: 100%; /* Ensure images scale proportionally */
+    max-width: 300px; /* Set a maximum width for responsiveness */
+  }
+  
+  /* Scrolling effects */
+  .content-item {
+    animation: slow-motion 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes slow-motion {
+    0% {
+      transform: translateY(0); /* Start at top */
+    }
+    100% {
+      transform: translateY(20px); /* Move down slightly on animation */
+    }
+  }
+  
+  /* Overflowing content styles */
+  .overflowing-content {
+    display: none; /* Initially hidden */
+  }
+  
+  /* Overflowing content reveal on scroll */
+  .content-container:after {
+    content: "";
+    display: block;
+    height: 100px; /* Adjust height based on desired reveal point */
+  }
+  
+  .content-container:hover .overflowing-content,
+  .content-container:active + .overflowing-content {
+    display: block; /* Show overflowing content on hover or click */
+    animation: content-reveal 1s ease-in-out;
+  }
+  
+  @keyframes content-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Slide down from below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

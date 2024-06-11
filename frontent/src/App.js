@@ -13,6 +13,7 @@ import Balance from './Camponent/Balance';
 import NFTs from './Camponent/NFTs';
 import MyWallet from './Camponent/MyWallet';
 import Authenticate from './Camponent/Authenticate';
+import Contact from './Camponent/Contact';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route exact path='/about'element={<About/>}/>
       <Route exact path='/gaming'element={<Game/>}/>
       <Route exact path='/PortFolio'element={<Portfolio/>}/>
+      <Route exact path='/contact'element={<Contact/>}/>
+
       <Route exact path='/balancse'element={<Balance/>}/>
       <Route exact path='/nfts'element={<NFTs/>}/>
       <Route exact path='/my-wallet'element={<MyWallet/>}/>

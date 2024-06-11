@@ -1,0 +1,223 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.content-container {
+  display: flex; /* Arrange content items horizontally */
+  flex-wrap: wrap; /* Allow content to wrap if necessary */
+  margin: 0 auto; /* Center the container horizontally */
+  width: 80%; /* Adjust width as needed */
+  padding: 20px;
+}
+
+.content-item {
+  margin-bottom: 20px;
+  text-align: center; /* Center content within each item */
+}
+
+.text {
+  /* Styles for text content */
+}
+
+.image img {
+  width: 100%; /* Ensure images scale proportionally */
+  max-width: 300px; /* Set a maximum width for responsiveness */
+}
+
+/* Scrolling effects */
+.content-item {
+  animation: slow-motion 5s ease-in-out infinite alternate;
+}
+
+@keyframes slow-motion {
+  0% {
+    transform: translateY(0); /* Start at top */
+  }
+  100% {
+    transform: translateY(20px); /* Move down slightly on animation */
+  }
+}
+
+/* Overflowing content styles */
+.overflowing-content {
+  display: none; /* Initially hidden */
+}
+
+/* Overflowing content reveal on scroll */
+.content-container:after {
+  content: "";
+  display: block;
+  height: 100px; /* Adjust height based on desired reveal point */
+}
+
+.content-container:hover .overflowing-content,
+.content-container:active + .overflowing-content {
+  display: block; /* Show overflowing content on hover or click */
+  animation: content-reveal 1s ease-in-out;
+}
+
+@keyframes content-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide down from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+    
+</body>
+<div class="content-container">
+    <div class="content-item text">
+      <h2>Text Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="content-item image">
+        <img src="https://t3.ftcdn.net/jpg/06/79/02/64/360_F_679026458_CwWqaY1iZbtKQkcDaiAR3cQjCM2QXhEx.webp"/>
+   
+    <div class="overflowing-content">
+      <p>This is the overflowing content that appears as you scroll down.</p>
+    </div>
+  </div>
+</html>
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+h1{
+  font-size: 16px;
+  text-align: center;
+  color: rgba(red, green, blue, alpha);
+}
+.parllax-1{
+  background-image: url("https://images.unsplash.com/photo-1554570139-827896e78c98?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+}
+.parllax-inner{
+  padding: 10% 0;
+}
+h2{
+  font-size: 32px;
+  color: #555;
+  text-align: center;
+  font-weight: 300px;
+}
+h1{
+  font-size: 16px;
+  text-align: center;
+  color: rgba(red, green, blue, alpha);
+}
+.parllax-2{
+  background-image: url(https://images.unsplash.com/photo-1564669722947-c89159202d19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D);
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+}
+.parllax-inner{
+  padding: 10% 0;
+}
+h2{
+  font-size: 32px;
+  color: #555;
+  text-align: center;
+  font-weight: 300px;
+}
+h1{
+  font-size: 16px;
+  text-align: center;
+  color: rgba(red, green, blue, alpha);
+}
+.parllax-3{
+  background-image: url("https://img.freepik.com/free-photo/rainbow-light-watercolor-stains_125540-2250.jpg?w=996&t=st=1718110122~exp=1718110722~hmac=e92dbeb712fc28d4f25db9ea220bf5e4d02ae23ae6f886409d426d5a3f83f1fc");
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+}
+.parllax-inner{
+  padding: 10% 0;
+}
+h2{
+  font-size: 32px;
+  color: #555;
+  text-align: center;
+  font-weight: 300px;
+}
+
+
+</style>
+<body>
+  <section>
+    <section class="parllax-1">
+      <div class="parllax-inner">
+        <h1>Scroll Down</h1>
+        <p> Lorem ipsum dolor sit amet consectetu
+           adipisicing elit. Consectetur mollitia
+            obcaecati sed quibusdam molestias temporibus 
+            amet ullam vero eius modi. Laborum eius,
+           id doloremque in dolor iste veritatis similique reiciendis.</p>
+      </div>
+    </section>
+    <h2>Parllax Effect</h2>
+  </section>
+
+  <section class="parllax-2">
+    <div class="parllax-inner">
+      <h1>Scroll Down</h1>
+      <p> Lorem ipsum dolor sit amet consectetu
+         adipisicing elit. Consectetur mollitia
+          obcaecati sed quibusdam molestias temporibus 
+          amet ullam vero eius modi. Laborum eius,
+         id doloremque in dolor iste veritatis similique reiciendis.</p>
+    </div>
+  </section>
+  <h2>Parllax Effect</h2>
+</section>
+
+<section class="parllax-3">
+  <div class="parllax-inner">
+    <h1>Scroll Down</h1>
+    <p> Lorem ipsum dolor sit amet consectetu
+       adipisicing elit. Consectetur mollitia
+        obcaecati sed quibusdam molestias temporibus 
+        amet ullam vero eius modi. Laborum eius,
+       id doloremque in dolor iste veritatis similique reiciendis.</p>
+  </div>
+</section>
+
+</section>
+  
+</body>
+</html> -->
