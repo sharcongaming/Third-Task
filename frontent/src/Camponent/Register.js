@@ -47,7 +47,7 @@ const Register = () => {
         if (state?.user?.name) {
             router('/')
         }
-    }, [state])
+    }, [ state])  // state
     console.log(userData, "userData")
     return (
 

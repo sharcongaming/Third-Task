@@ -47,7 +47,7 @@ const Login = () => {
         if (state?.user?.name) {
             router('/')
         }
-    }, [state])
+    }, [])
 
     
     return (
