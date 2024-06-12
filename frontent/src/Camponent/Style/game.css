@@ -96,7 +96,11 @@
   
   .image img {
     width: 100%; /* Ensure images scale proportionally */
-    max-width: 300px; /* Set a maximum width for responsiveness */
+    max-width: 400px; /* Set a maximum width for responsiveness */
+  }
+  .image img:hover{
+    box-shadow: 5px 5px 5px #888888, -5px -5px 10px #cccccc;
+    border: 2px solid black;
   }
   
   /* Scrolling effects */

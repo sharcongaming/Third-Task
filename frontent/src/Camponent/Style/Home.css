@@ -109,7 +109,7 @@ body{
     /* border: 5px solid red; */
 }
 
-.mainDiv{
+/* .mainDiv{
     width: 97%; 
     height: 350px;
     position: absolute;
@@ -122,11 +122,11 @@ body{
     animation: slider 11s infinite linear;    
 }
 @keyframes slider{
-    0%{background-image: url(https://as2.ftcdn.net/v2/jpg/05/71/50/17/1000_F_571501736_sm9IfzxEqjNP5tIsTmliz17kNbPgB4nq.jpg); }
+    0%{background-image: url(https://img.freepik.com/premium-photo/young-gaming-team-epic-battles-multiplayer-action-neon-arena_1036975-110472.jpg?size=626&ext=jpg&ga=GA1.1.1069028106.1717068952&semt=sph); }
     35%{background-image: url(https://as1.ftcdn.net/v2/jpg/05/99/66/44/1000_F_599664488_G9ldjGHADRlW3hi9BYwL5x9STzvSUbnE.jpg); }
     75%{ background-image: url(https://t3.ftcdn.net/jpg/02/43/40/98/240_F_243409810_C2rWCXa7xa6FPvjZ7jmgBaTuAMH0djuf.jpg);}
     100%{ background-image: url(https://as1.ftcdn.net/v2/jpg/04/70/53/54/1000_F_470535460_xpy0neCZx9gX8UTYHEVdRLT7UeqjM2Ek.jpg);}
-}
+} */
 /* *** Scrolling bar ***** */
 
 
@@ -137,7 +137,7 @@ body{
     justify-content: center;
     align-items: center;
     /* border: 5px solid red; */
-    margin-top: 20%;
+    /* margin-top: 20%; */
     
 }
 .home-content {
@@ -167,17 +167,7 @@ body{
 
   
 /* Overflowing content reveal on scroll */
-.content-container:after {
-    content: "";
-    display: block;
-    height: 100px; /* Adjust height based on desired reveal point */
-  }
-  
-  .content-container:hover .overflowing-content,
-  .content-container:active + .overflowing-content {
-    display: block; /* Show overflowing content on hover or click */
-    animation: content-reveal 1s ease-in-out;
-  }
+
   
 .home-content.visible {
     opacity: 1;

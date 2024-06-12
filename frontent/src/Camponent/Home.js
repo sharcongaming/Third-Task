@@ -63,7 +63,10 @@ else{
 
 
       <div className='container-page'>
-      <div class="mainDiv">  </div>
+      <div class="mainDiv"> 
+        <img src='https://img.freepik.com/premium-photo/young-gaming-team-epic-battles-multiplayer-action-neon-arena_1036975-110472.jpg?size=626&ext=jpg&ga=GA1.1.1069028106.1717068952&semt=sph'/>
+        
+         </div>
 
       {/* Home Banner */}
 
@@ -108,9 +111,9 @@ else{
 
       <div class="threebox-container-flex">
             <div class="cbox">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mGGbXfKo3pAtUXxBSf_Ndmw9eZN7FqkT0g&s" alt="title"/>
                 <div class="cboxde">
-                    <h5>OUR ALL GAMES</h5>
+                    <h5>volleyball</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
@@ -119,9 +122,9 @@ else{
             </div>
 
             <div class="cbox">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
+                <img src="https://st2.depositphotos.com/1046535/7980/i/450/depositphotos_79804048-stock-photo-badminton-sport-in-gym-hand.jpg" alt="title"/>
                 <div class="cboxde">
-                    <h5>OUR ALL GAMES</h5>
+                    <h5>Badminton </h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
@@ -130,9 +133,9 @@ else{
             </div>
 
             <div class="cbox">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
+                <img src="https://st4.depositphotos.com/1446098/39943/i/450/depositphotos_399439086-stock-photo-pickleball-balls-paddle-sport-pickleball.jpg" alt="title"/>
                 <div class="cboxde">
-                    <h5>OUR ALL GAMES</h5>
+                    <h5>Pickaleball</h5>
                     <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
@@ -191,7 +194,7 @@ else{
             <div class="cardsection">
                 <div class="cardimg">
              
-                        <img src="https://cdn.mos.cms.futurecdn.net/Kuuyu5VZoVxqZxy48swupn-650-80.jpg.webp" alt=""/>
+                        <img src="https://img.freepik.com/free-photo/futuristic-dj-using-virtual-reality-glasses-headline-party-play-music_23-2151418276.jpg" alt=""/>
                
                     <div class="tegs">
                         <a href="/">ACTION</a>
@@ -214,7 +217,7 @@ else{
 
  <div class="cardimg">
              
-             <img src="https://cdn.mos.cms.futurecdn.net/Kuuyu5VZoVxqZxy48swupn-650-80.jpg.webp" alt=""/>
+             <img src="https://www.shutterstock.com/image-vector/welcome-new-player-esports-gaming-600w-2194403005.jpg" alt=""/>
     
          <div class="tegs">
              <a href="/">ACTION</a>

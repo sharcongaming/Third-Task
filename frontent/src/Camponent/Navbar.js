@@ -71,6 +71,8 @@ if (dropbtn) {
 
        <p onClick={()=> router('/gaming')}> Game</p>
        <p onClick={()=> router('/about')}>About</p>
+  
+       <p onClick={()=> router('/Tournament')}>Tournament</p>
        <p onClick={()=> router('/PortFolio')}>PortFolio</p>
     <p onClick={()=> router('/contact')}>Contact
     </p>
