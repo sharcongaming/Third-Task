@@ -68,13 +68,13 @@ const Login = () => {
         <div  className='body-first'>
             <form  className='form-login'  onSubmit={handleSubmit}>
                 <label  className='label-login'>Email*</label><br />
-                <input  className='input-field-login'   type='email' onChange={handleChange} name='email' value={userData.email} /><br />
-                <label   className='label-login'  >Password*</label><br />
-                <input   className='input-field-login' type='password' onChange={handleChange} name='password' value={userData.password} /><br />
+                <input  className='input-field-login'  placeholder='Email'  type='email' onChange={handleChange} name='email' value={userData.email} /><br />
+                <label   className='label-login'   >Password*</label><br />
+                <input   className='input-field-login' placeholder='Password' type='password' onChange={handleChange} name='password' value={userData.password} /><br />
                 <input  className='submit-btn-login'  type='submit' value='Login' /><br />
             </form>
          <div className=' privcy-polcy'>
-            <p  onClick={()=> router('/register')}>New Acount <b style={{color:"black"}}>Click Here?</b> <br/> <span>I Agree to the terms & condition</span></p>
+            <p  onClick={()=> router('/register')}>New Acount <b style={{  cursor:'pointer',color:"black"}}>Click Here?</b> <br/> <span>I Agree to the terms & condition</span></p>
 
          </div>
         </div>

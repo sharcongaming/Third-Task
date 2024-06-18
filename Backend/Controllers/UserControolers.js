@@ -8,7 +8,6 @@ import { Contract } from "ethers";
 
 export const Register = async (req, res) => {
   try {
-    const { userData } = req.body.userData;
     const { name, email, password,  confirmpassword} = req.body.userData;
     if (!name || !email || !password ||  !confirmpassword)
       return res.json({

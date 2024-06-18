@@ -28,10 +28,10 @@ function App() {
       <Route exact path='/PortFolio'element={<Portfolio/>}/>
       <Route exact path='/contact'element={<Contact/>}/>
 
-      <Route exact path='/balancse'element={<Balance/>}/>
+      {/* <Route exact path='/balancse'element={<Balance/>}/>
       <Route exact path='/nfts'element={<NFTs/>}/>
       <Route exact path='/my-wallet'element={<MyWallet/>}/>
-      <Route exact path='/auth'element={<Authenticate/>}/>
+      <Route exact path='/auth'element={<Authenticate/>}/> */}
 
 
 

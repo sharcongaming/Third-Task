@@ -12,16 +12,17 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
-    },
-    balance: {
-        userId: String,
-        balance: Number,
-        coins: Number
-    },
-    number:{
-        type: Number,
-        required: true
-    },
+    }
+    // ,
+    // balance: {
+    //     userId: String,
+    //     balance: Number,
+    //     coins: Number
+    // },
+    // number:{
+    //     type: Number,
+    //     required: true
+    // },
 
 })
 export default mongoose.model("User", userSchema)
