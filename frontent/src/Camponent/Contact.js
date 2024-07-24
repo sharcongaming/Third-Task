@@ -1,4 +1,5 @@
 import React from 'react'
+import ChatBox from './ChatBox'
 
 const Contact = () => {
   return (
@@ -6,6 +7,7 @@ const Contact = () => {
  <div className='contact-section'>
 
 <div  class="contact" id="contact">
+
                   <h2 class="heading" > Contact <span>Me</span></h2>
                   Say Hello..!
 Fill up this form to reach our stunning Streamit team and click on send message.
@@ -23,12 +25,13 @@ Fill up this form to reach our stunning Streamit team and click on send message.
                         <input type="submit" value="Send Message" class="btn"/>
                   </form>
             </div>
+     
 </div>
 <div >
 
 </div>
 
-      
+<ChatBox/>
 
     </div>
   )

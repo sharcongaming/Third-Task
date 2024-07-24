@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Style/about.css"
+import ChatBox from './ChatBox'
 const About = () => {
   return (
     <div className='about-first-page'>
   <div class="parllax-inner">
-<div className='port-page-about'>
+<div className='port-page-about'>\
+<ChatBox/>
             <div className='text-div-about'>
             <h2 className='gradient-text-about'>In the realm of game development,
 our committed team of creatives radiates with talent

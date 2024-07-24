@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 import "./Style/Home.css"
+import ChatBox from './ChatBox'
 
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"></link>
 
@@ -66,7 +67,15 @@ else{
       <div class="mainDiv"> 
         <img src='https://img.freepik.com/premium-photo/young-gaming-team-epic-battles-multiplayer-action-neon-arena_1036975-110472.jpg?size=626&ext=jpg&ga=GA1.1.1069028106.1717068952&semt=sph'/>
         
+        <ChatBox/>
+        
+     {/* <div className='icon-box'>
+     <i class="fa-solid fa-house fa-2xl" ></i>
+     <p>How can i Help You ?</p>
+     </div> */}
          </div>
+
+
 
       {/* Home Banner */}
 

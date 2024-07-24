@@ -14,6 +14,8 @@ import NFTs from './Camponent/NFTs';
 import MyWallet from './Camponent/MyWallet';
 import Authenticate from './Camponent/Authenticate';
 import Contact from './Camponent/Contact';
+import ChatBox from './Camponent/ChatBox';
+import Tournament from './Camponent/Tournament';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
       <Route exact path='/gaming'element={<Game/>}/>
       <Route exact path='/PortFolio'element={<Portfolio/>}/>
       <Route exact path='/contact'element={<Contact/>}/>
+      <Route exact path='/chatbot'element={<ChatBox/>}/>
+      <Route exact path='/Tournament'element={<Tournament/>}/>
+
 
       {/* <Route exact path='/balancse'element={<Balance/>}/>
       <Route exact path='/nfts'element={<NFTs/>}/>

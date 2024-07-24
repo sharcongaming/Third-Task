@@ -145,6 +145,38 @@ body{
 
     /* border: 3px solid black; */
 }
+
+
+/* *************** */
+
+.icon-box{
+ width: 10%;
+ height: 110px;
+ margin-left: 85%;
+ position: fixed;
+ top: 75%; 
+ left: 20px; 
+ color: #fff;
+ padding: 10px;
+ border-radius: 5px;
+ z-index: 1000;
+ line-height: 1.5;
+ background-color: #f9f9f9; 
+}
+.icon-box a>img{
+  width: 25%;
+  margin-top: 7px;
+}
+.icon-box i{
+  color: rgb(108, 57, 202);
+}
+
+.icon-box-div{
+  margin-top: 5%;
+}
+
+/* ********************* */
+
 @keyframes slow-motion {
     0% {
       transform: translateY(0); /* Start at top */
