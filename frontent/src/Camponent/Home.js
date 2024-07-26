@@ -67,7 +67,7 @@ else{
       <div class="mainDiv"> 
         <img src='https://img.freepik.com/premium-photo/young-gaming-team-epic-battles-multiplayer-action-neon-arena_1036975-110472.jpg?size=626&ext=jpg&ga=GA1.1.1069028106.1717068952&semt=sph'/>
         
-        <ChatBox/>
+        {/* <ChatBox/> */}
         
      {/* <div className='icon-box'>
      <i class="fa-solid fa-house fa-2xl" ></i>

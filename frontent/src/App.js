@@ -16,6 +16,7 @@ import Authenticate from './Camponent/Authenticate';
 import Contact from './Camponent/Contact';
 import ChatBox from './Camponent/ChatBox';
 import Tournament from './Camponent/Tournament';
+import Chat from './Camponent/Chat';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <Route exact path='/contact'element={<Contact/>}/>
       <Route exact path='/chatbot'element={<ChatBox/>}/>
       <Route exact path='/Tournament'element={<Tournament/>}/>
+      <Route exact path='/chat'element={<Chat/>}/>
+
 
 
       {/* <Route exact path='/balancse'element={<Balance/>}/>
