@@ -1,47 +1,3 @@
-// import React from 'react'
-// import "./Style/chat.css"
-
-
-// const Chat = () => {
-
-//   document.addEventListener('DOMContentLoaded', (event) => {
-//     const openPopupBtn = document.getElementById('openPopupBtn');
-//     const closePopupBtn = document.getElementById('closePopupBtn');
-//     const popup = document.getElementById('popup');
-  
-//     openPopupBtn.addEventListener('click', () => {
-//       popup.style.display = 'block';
-//     });
-  
-//     closePopupBtn.addEventListener('click', () => {
-//       popup.style.display = 'none';
-//     });
-  
-//     window.addEventListener('click', (event) => {
-//       if (event.target == popup) {
-//         popup.style.display = 'none';
-//       }
-//     });
-//   });
-  
-//   return (
-//     <div  className='chat-bot-first'>
-// <i class="fa-solid fa-pen "></i>
-
-// <div id="popup" class="popup">
-//     <div class="popup-content">
-//       <span id="closePopupBtn" class="close">&times;</span>
-//       <h2>Popup Header</h2>
-//       <p>This is a simple popup example.</p>
-//     </div>
-//   </div>
-//     </div>
-//   )
-// }
-
-// export default Chat
-
-
 
 import React, { useRef, useEffect } from 'react';
 import "./Style/chat.css";
@@ -109,14 +65,8 @@ const Chat = () => {
         <div class="chat-body" id="chatBody">
         <input type="text" id="userInput" placeholder="Type your message..."/>
         <div className='box'><i class="fas fa-location-arrow"></i></div>
-
-        </div>
-        <div class="chat-footer">
-            {/* <button onclick="sendMessage()">Send</button> */}
         </div>
     </div>
-
-
     </div>
     </div>
     </div>

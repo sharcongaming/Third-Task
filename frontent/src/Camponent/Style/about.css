@@ -216,3 +216,59 @@ background: linear-gradient(to right, #191f36, #8c9eff);
     /* border: 1px solid black; */
     width: 60%;
    }
+
+   
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .text-div-about {
+      width: 95%;
+      margin-left: 2.5%;
+  }
+
+  .port-dived-about {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .first-child, .second-child {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .about-last {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .myteam {
+      width: 80%;
+      margin-left: 10%;
+  }
+
+  .our-team-div {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+  }
+
+  .team-first-child, .team-second-child {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .about-us {
+      width: 95%;
+      margin-left: 2.5%;
+  }
+
+  .our-client-page {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+  }
+
+  .our-client, .our-clint-sec {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}

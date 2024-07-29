@@ -7,23 +7,76 @@
 
 .icon-box {
     padding: 10px;
-    background-color: #f9f9f9; /* Adjust background color if needed */
+    background-color: #f9f9f9; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 13%;
 }
 
 .icon-box i {
-    margin-right: 10px; /* Space between icon and text */
-    color: #007bff; /* Adjust icon color if needed */
+    margin-right: 10px; 
+    color: #007bff; 
 }
 
 .icon-box p {
     margin-top: 2%;
 color: black;
     margin: 0;
-    font-size: 16px; /* Adjust font size if needed */
+    font-size: 16px; 
 }
 
 
-/* *******************chatbot.css******************** */
+
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+
+    .port-first-page{
+        margin-top: 5%;
+    }
+    .text-div h2 p{
+        margin-top: 15%;
+    
+    }
+    .icon-box {
+        width: 10%; 
+        padding: 10px;
+    }
+
+    .icon-box p {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .icon-box {
+        width: 20%; 
+    }
+
+    .icon-box p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-box {
+        width: 30%; 
+        padding: 8px;
+    }
+
+    .icon-box p {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-box {
+        width: 45%; 
+        padding: 6px; 
+    }
+
+    .icon-box p {
+        font-size: 12px; 
+    }
+}

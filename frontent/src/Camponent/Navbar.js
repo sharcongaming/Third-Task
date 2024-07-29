@@ -68,7 +68,6 @@ if (dropbtn) {
         </div>
       </div>
       <div  className='second-navigation'>
-
        <p onClick={()=> router('/gaming')}> Game</p>
        <p onClick={()=> router('/about')}>About</p>
   
@@ -127,9 +126,6 @@ if (dropbtn) {
       </>: <p style={{color:"red"}} onClick={()=> router('/register')} >Register</p>}
 </div>
      </div>
-
-
-
      
     </div>
 

@@ -124,3 +124,94 @@ box-sizing: border-box;
          bottom: 68px;
         color: red;
    }
+
+
+
+
+   /* responsive desgine  */
+
+
+/* For screens 1200px and below */
+@media (max-width: 1200px) {
+  .from-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .button-box {
+    width: 200px;
+  }
+
+  .input-group {
+    width: 260px;
+  }
+}
+
+/* For screens 992px and below */
+@media (max-width: 992px) {
+  .from-box {
+    width: 95%;
+  }
+
+  .button-box {
+    width: 180px; /* Added 'px' unit */
+  }
+
+  .input-group {
+    width: 240px;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .from-box {
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+    padding: 10px;
+  }
+
+  .button-box {
+    width: 150px;
+  }
+
+  .input-group {
+    width: 100%;
+    left: 10px;
+  }
+
+  .label-login {
+    margin-right: 20%;
+  }
+
+  .socail-icons img {
+    width: 25px;
+  }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .from-box {
+    width: 100%;
+    height: auto;
+    margin: 2% auto;
+  }
+
+  .button-box {
+    width: 130px;
+  }
+
+  .input-group {
+    width: 100%;
+    left: 5px;
+  }
+
+  .label-login {
+    margin-right: 10%;
+    font-size: 14px;
+  }
+
+  .socail-icons img {
+    width: 20px;
+  }
+}

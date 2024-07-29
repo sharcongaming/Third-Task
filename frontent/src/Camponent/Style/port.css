@@ -72,3 +72,98 @@
     border: 2px black;
     transform: scale(1.1);
   }
+
+  /* ****** Media quiries ******** */
+
+
+/* For screens 1200px and below */
+@media (max-width: 1200px) {
+  .port-page, .second-port {
+      height: 500px;
+  }
+
+  .second-port > h2 {
+      font-size: 55px;
+  }
+
+  .second-port-div {
+      width: 45%;
+      height: 300px;
+  }
+
+  .second-port-div > img {
+      height: 270px;
+  }
+}
+
+/* For screens 992px and below */
+@media (max-width: 992px) {
+  .port-page, .second-port {
+      height: 400px;
+  }
+
+  .second-port > h2 {
+      font-size: 45px;
+  }
+
+  .second-port-div {
+      width: 60%;
+      height: 250px;
+  }
+
+  .second-port-div > img {
+      height: 220px;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .text-div {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 10%;
+  }
+
+  .second-port > h2 {
+      font-size: 35px;
+  }
+
+  .second-port-div {
+      width: 80%;
+      height: 200px;
+      margin: 10px auto;
+  }
+
+  .second-port-div > img {
+      height: 170px;
+  }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .port-page, .second-port {
+      height: auto;
+      padding-bottom: 20px;
+  }
+
+  .text-div {
+      width: 95%;
+      margin-left: 2.5%;
+      margin-top: 5%;
+  }
+
+  .second-port > h2 {
+      font-size: 25px;
+  }
+
+  .second-port-div {
+      width: 95%;
+      height: auto;
+      margin: 10px auto;
+  }
+
+  .second-port-div > img {
+      height: auto;
+      width: 100%;
+  }
+}

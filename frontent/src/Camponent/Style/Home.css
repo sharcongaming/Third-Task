@@ -527,6 +527,8 @@ color: black;
 
 
 
+
+
      /* {Contact Section} */
 
 .contact h2{
@@ -568,6 +570,66 @@ color: black;
     cursor: pointer;
     width: 30%;
 }
+
+
+/* media quries  */
+
+/* For screens 992px and below */
+@media (max-width: 992px) {
+ 
+  .contact form {
+      max-width: 90%;
+  }
+
+  .contact form .input-box {
+      flex-direction: column; 
+  }
+
+  .contact form .input-box input {
+      width: 100%; 
+  }
+
+  .contact form .btn {
+      width: 100%; 
+  }
+  .contact h2{
+    margin-top: 13%;
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
+  .contact form {
+      padding: 0 1rem; 
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+      font-size: 1.4rem; 
+      padding: 1rem; 
+  }
+
+  .contact form .btn {
+      font-size: 1.4rem; 
+  }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .contact form .input-box input,
+  .contact form textarea {
+      font-size: 1.2rem; 
+      padding: 0.8rem; 
+      height: 60px; 
+  }
+
+  .contact form .btn {
+      font-size: 1.2rem; 
+      padding: 0.8rem; 
+  }
+}
             /* {****************Tournaments*******************} */
 
 .Tournaments{
@@ -576,16 +638,16 @@ color: black;
 
 
 
-/* @media(max-width: 1118px){
+@media(max-width: 1118px){
   .home-page-screen{
     width: 80%;
     padding: 0;
   }  
-} */
+} 
 
-/* @media only screen and (max-width:500px){
+ @media only screen and (max-width:500px){
     .home-page-screen{
         width: 50%;
         padding: 0;
       }
-  } */
+  }

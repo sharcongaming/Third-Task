@@ -100,12 +100,6 @@ About us.</h2>
      graphics, branding, and development excellence.</p>
 
 </div>
-<div className='our-clint-sec'>
-
-
-</div>
-
-
 </div>
     </div>
   )

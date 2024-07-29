@@ -1,223 +1,136 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;
-   
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.navigation{
+/* Navigation bar styles */
+.navigation {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: black;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.navbar-first {
+  width: 20%;
+}
+
+.logo-navbar {
+  width: 100%;
+}
+
+.second-navigation {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-navigation > p {
+  color: white;
+  cursor: pointer;
+}
+
+.second-navigation > p:hover {
+  color: red;
+}
+
+/* Menu icon styles */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: black;
+  width: 100%;
+  height: calc(100vh - 60px);
+  z-index: 1001;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: red;
+}
+
+/* Show menu when active */
+.menu.open {
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 1118px) {
+  .logo-navbar {
+    left: 8%;
+    top: 20px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 944px) {
+  .logo-navbar {
+    left: 8%;
+    top: 20px;
+    width: 130px;
+  }
+  .second-navigation > p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 860px) {
+  .second-navigation {
+    display: none; /* Hide second navigation */
+  }
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .navbar-first {
     width: 100%;
-    /* border: 2px solid rgb(173, 29, 29); */
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    text-align: center;
+  }
+  .second-navigation {
+    width: 100%;
+    flex-direction: column;
     align-items: center;
-    background-color: black;
-} 
-.navbar-first{
-    border: 3px solid black; 
-       width: 20%;
-
- } 
-.logo-navbar{
-    /* border: 4px solid rgb(209, 32, 32); */
+  }
+  .search {
     width: 100%;
-
-}
-
-.second-navigation{
-    /* border: 3px solid black;  */
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-
-} 
-.second-navigation>p{
-    color: white;
-}
-.second-navigation>p:hover{
-    color: red;
-}
-.serch-bar{
-    /* border: 1px solid red; */
-    display: flex;
-}
-.serch-bar>i{
-    margin-bottom: 5px;
-    margin-left: 10%;
-
-}
-.search{
-    width: 25%;
-    /* height: 60px; */
-    margin-top: 4%;
- 
-
-}
-.search>div{
-    /* border: 1px solid black; */
-    margin-top: 25px;
-    background-color: #f5f5f6;
-    border-radius: 10px;
- 
-
-}
-.search>div>input{
+  }
+  .dropbtn {
     width: 100%;
-    border: none;
-    /* outline: none; */
-    height: 35px;
-   text-align: center;
-    background-color: #f5f5f6;
-  
-
-
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    background-color: black;
-    width: 100%;
-     /* Ensures the button stays inline */
-  }
-
-.dropbtn {
-    background-color: #3498db;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border: 3px solid red;
-  }
-  
-  .dropdown-content {
-    display: none; 
-    margin-top: 30%;
-    /* Initially hidden */
-    position: absolute;
-     /* Placed relative to the button */
-    background-color: #fff;
-    min-width: 160px;
-     /* Minimum width for the dropdown menu */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; 
-    /* Ensure the dropdown appears above other elements */
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block; 
-    
-  }
-  
-  /* Hover effect for dropdown options */
-  .dropdown-content a:hover {
-  }
-  
-  /* Optional: Show the dropdown content on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .drop-div{
-    /* border: 4px solid red; */
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .drop-div:hover{
-    background-color: #ddd;
-  }
-  .drop-div a{
-    margin-bottom: 5%;
-
-  }
-  .first-child{
-    width: 50%;
-    height: 45px;
-  }
-  .first-child>p{
-    color: #fff;
-  }
-  .first-child>a:hover{
-    color: red;
-  }
-.second-child{
-    width: 40%;
-    height: 45pxpx;
-    /* border: 1px solid black;   */
-}
-.second-child>i:hover{
-  color: #d80707;
-}
-.second-child>i{
-color: black;
-margin-right: 4%;
-margin-top: 10%;
-}
-
-
-@media(max-width: 1118px){
-  .logo-navbar{
-    left: 8%;
-    top: 20px;
-    width: 130px;
-  }
-
-}
-
-@media (max-width: 944px){
-  .logo-navbar{
-    left: 8%;
-    top: 20px;
-    width: 130px;
-  }
-  .second-navigation>p{
-font-size: 17px;
   }
 }
-@media (max-width: 860px){
-  .label#btn{
-    display: block;
-  }
-  .second-navigation>p{
-    position: fixed;
-   width: 100%;
-   height: 100vh;
-   top: 80px;
-   left: -100%;
-   text-align: center;
-   transition:all.5s ;
-  }
-  .second-navigation>p{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  .second-navigation>p{
-    font-size: 20px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
