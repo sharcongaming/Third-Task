@@ -17,6 +17,8 @@ import Contact from './Camponent/Contact';
 import ChatBox from './Camponent/ChatBox';
 import Tournament from './Camponent/Tournament';
 import Chat from './Camponent/Chat';
+import Robotics from './Camponent/Robotics';
+import Blockchain from './Camponent/Blockchain';
 
 function App() {
   return (
@@ -33,6 +35,9 @@ function App() {
       <Route exact path='/chatbot'element={<ChatBox/>}/>
       <Route exact path='/Tournament'element={<Tournament/>}/>
       <Route exact path='/chat'element={<Chat/>}/>
+      <Route exact path='/robotics'element={<Robotics/>}/>
+      <Route exact path='/blockchain'element={<Blockchain/>}/>
+
 
 
 

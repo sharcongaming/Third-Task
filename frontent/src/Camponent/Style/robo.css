@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-div-robo{
+    width: 100%;
+    background: linear-gradient(to right, #191f36, #8c9eff);
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    margin-top: 5%;
+}
+.first-componenet{
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+.component-start {
+    height: 350px;
+    width: 94%;
+    margin-left: 8%;
+    /* margin-top: 3%; */
+    display: flex;
+    justify-content: space-around;
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%
+}
+.right-robo{
+    width: 50%;
+    /* border: 1px solid black; */
+}
+.left-robo{
+    margin-top: 5%;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+.robo-imag{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 350px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #fff; */
+    border-radius: 10px;
+}
+.robo-imag img{
+    width: 50%;
+    height: 250px;
+}
+.last-componenet-robo{
+    border: 1px solid black;
+}
+.main-component{
+    /* margin-top: 3%; */
+    display: flex;
+    justify-content: space-around;
+  
+}
+.child-div{
+    width: 25%;
+}
+.child-div h2{
+    color: black;
+}
+.child-div h4{
+    color: black;
+    margin-top: 4%;
+}
+.image-div{
+    border: 1px solid;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    margin-top: 10%;
+}
+.image-div img{
+    height: 200px;
+}
+.text-img{
+    margin-top: 5%;
+    width: 90%;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .component-start {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-robo, .left-robo {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .robo-imag {
+        height: auto;
+    }
+
+    .robo-imag img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-componenet, .component-start, .main-component {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-robo, .left-robo {
+        width: 100%;
+    }
+
+    .child-div {
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .image-div {
+        width: 80%;
+        height: auto;
+    }
+
+    .image-div img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .child-div {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .image-div {
+        width: 100%;
+    }
+}
+
