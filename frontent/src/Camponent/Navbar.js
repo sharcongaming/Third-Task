@@ -63,16 +63,18 @@ if (dropbtn) {
 
       <div className='navbar-first'>
         <div className='logo-navbar'>
-          <img   onClick={()=> router('/')} style={{width:"100%", height:"50px"}} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmmSM_Sj7T54hqoX-u-mJ-eCFK46BHxJVHw&s'/>
+        <img src=" ..\Camponent\Image\BlackHole_Infiverse_Logo.png"/>
+
+          {/* <img   onClick={()=> router('/')} style={{width:"100%", height:"50px"}}
+           src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmmSM_Sj7T54hqoX-u-mJ-eCFK46BHxJVHw&s'/> */}
 
         </div>
       </div>
       <div  className='second-navigation'>
+      <p onClick={()=> router('/about')}>AboutUs</p>
        <p onClick={()=> router('/gaming')}> Game</p>
-       <p onClick={()=> router('/about')}>About</p>
-  
-       <p onClick={()=> router('/Tournament')}>Tournament</p>
-       <p onClick={()=> router('/PortFolio')}>PortFolio</p>
+       <p onClick={()=> router('/robotics')}>Robotics</p>
+       <p onClick={()=> router('/blockchain')}>Blockchain</p>
     <p onClick={()=> router('/contact')}>Contact
     </p>
   

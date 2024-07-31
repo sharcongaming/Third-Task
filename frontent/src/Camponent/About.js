@@ -5,37 +5,33 @@ const About = () => {
   return (
     <div className='about-first-page'>
   <div class="parllax-inner">
-<div className='port-page-about'>\
+<div className='port-page-about'>
 <ChatBox/>
             <div className='text-div-about'>
-            <h2 className='gradient-text-about'>In the realm of game development,
-our committed team of creatives radiates with talent
-experience, and an unwavering passion for our craft.</h2>
+            <h2 className='gradient-text-about'>BlackHole Infiverse isn't your average 
+              content creation company. Founded in 2021, we emerged with a bold vision: to become 
+              a key player in the burgeoning meta, AI and robotics space.  We're a passionate team
+               driven by innovation, constantly pushing the boundaries of traditional media and diving headfirst
+               into the future of immersive storytelling through VR/AR experiences..</h2>
            
             </div>
             </div>
             <div className='second-port-about'>
             <div className='port-dived-about'>
               <div className='first-child'>
-                <h2>Who We Are ?</h2>
+                <h2>About Blackhole Infiverse ?</h2>
 
 
               </div>
               <div className='second-child'>
-                <p className='gradient-text-about-p'>Alone Clone Studios stands as a beacon of gaming
-                   innovation. We’re a dynamic collective of creative 
-                   minds and tech enthusiasts, committed to reshaping
-                    the landscape of interactive entertainment. Seamlessly
-                     blending artistry and technology, we craft immersive
-                      game worlds that enthrall players. Our unwavering 
-                      passion for storytelling and relentless pursuit of
-                       groundbreaking gameplay fuels our journey. At Alone
-                        Clone Studios, we thrive on pushing boundaries, 
-                        setting new standards, and defining the future of
-                         gaming. Step into a realm where innovation knows no 
-                         limits, and join us in crafting unforgettable gaming
-                          experiences. Welcome to Alone Clone Studios, where the
-                   adventure unfolds in limitless dimensions.</p>
+                <p className='gradient-text-about-p'>BlackHole Infiverse
+                   isn't your average content creation company. Founded in
+                    2021, we emerged with a bold vision: to become a key player in
+                     the burgeoning meta, AI and robotics space.  We're a passionate team
+                      driven by innovation, constantly pushing the
+                       boundaries of traditional
+                       media and diving headfirst into the future of 
+                  immersive storytelling through VR/AR experiences.</p>
               </div>
               </div>
               <div className='about-last'>

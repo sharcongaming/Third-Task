@@ -23,7 +23,7 @@ const Footer = () => {
       <div className='footer-col'>
         <h4>Contact Us</h4>
         <ul>
-          <li> <a href='#'>blackhole@gmail.com</a></li>
+          <li> <a href='#'>bh@blackholeinfiverse.com</a></li>
           <li> <a href='#'>9856*******</a></li>
           <li> <a href='#'>MotilalNagar</a></li>
         </ul>
@@ -45,8 +45,8 @@ const Footer = () => {
         <div className='socail-links'>
           <li> <a href='#'><i class="fab  fa-facebook-f"></i></a></li>
           <li> <a href='#'><i class="fab  fa-twitter"></i></a></li>
-          <li> <a href='#'><i class="fab  fa-instagram"></i></a></li>
-          <li> <a href='#'><i class="fab  fa-linkedin-in"></i></a></li>
+          <li> <a href='https://www.instagram.com/blackhole_infiverse/?igsh=MWZ1dWlzd3l2ZzlzeQ%3D%3D&utm_source=qr'><i class="fab  fa-instagram"></i></a></li>
+          <li> <a href='https://www.linkedin.com/in/blackhole-infiverse-4ab90a2b8/'><i class="fab  fa-linkedin-in"></i></a></li>
 
       
         </div>
