@@ -165,3 +165,48 @@ border-radius: 10px;
 
 
 
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .chat-bot-first {
+      width: 6%;
+      margin-left: 82%;
+  }
+
+  .popup-content {
+      width: 90%;
+      margin-right: 5%;
+      height: auto;
+  }
+
+  .chat-container {
+      margin-top: 85%;
+  }
+
+  .box {
+      width: 12%;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .chat-bot-first {
+      width: 10%;
+      margin-left: 75%;
+  }
+
+  .popup-content {
+      width: 95%;
+      margin-right: 2.5%;
+      height: auto;
+  }
+
+  .chat-container {
+      margin-top: 80%;
+  }
+
+  .box {
+      width: 15%;
+  }
+}

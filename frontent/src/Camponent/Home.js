@@ -85,9 +85,6 @@ else{
                 <h3>Gaming</h3>
                   <h1>New Home </h1>
                   <h3> For GameLovers <span class="multiple-text"></span></h3>
-                   {/* <h3>Gaming</h3>
-                  <h1 className='gradient-text'>"Let's make this world our playground!"</h1> 
-                   <h3 className='gradient-text'>A New Home For GameLovers  <span class="multiple-text"></span></h3>  */}
                   <p  className='gradient-text'> 
                   Gaming is usually played individually 
               or with multiple players locally or online
@@ -109,7 +106,8 @@ else{
 
             </div>
             <div class="Home-img">
-                  <img src="https://wallpapers.com/images/hd/gaming-profile-pictures-xpcd6q5uud2i45v8.jpg"/>
+
+                <img src='https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg'/>
             </div>
         
       </section>
@@ -123,9 +121,9 @@ else{
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mGGbXfKo3pAtUXxBSf_Ndmw9eZN7FqkT0g&s" alt="title"/>
                 <div class="cboxde">
                     <h5>volleyball</h5>
-                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
-                        deleniti neque impedit earum omnis.</p>
+                    {/* <h2 style={{color:"black"}}>CODEX GAMES</h2> */}
+                    <p className='gradient-text'>Volleyball is an engaging and dynamic sport suitable for players of all ages and skill levels. Whether played competitively or recreationally,
+                         it offers numerous physical, social, and mental benefits...</p>
                         <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
@@ -134,9 +132,9 @@ else{
                 <img src="https://st2.depositphotos.com/1046535/7980/i/450/depositphotos_79804048-stock-photo-badminton-sport-in-gym-hand.jpg" alt="title"/>
                 <div class="cboxde">
                     <h5>Badminton </h5>
-                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
-                        deleniti neque impedit earum omnis.</p>
+                    {/* <h2 style={{color:"black"}}>CODEX GAMES</h2> */}
+                    <p className='gradient-text'>Badminton is a fast-paced and engaging sport that can be enjoyed by people of all ages and skill levels. Whether played casually or competitively,
+                         it offers numerous physical, mental, and social benefits...</p>
                         <p  className='about-more'> <b>About More</b></p>
                 </div>
             </div>
@@ -145,7 +143,17 @@ else{
                 <img src="https://st4.depositphotos.com/1446098/39943/i/450/depositphotos_399439086-stock-photo-pickleball-balls-paddle-sport-pickleball.jpg" alt="title"/>
                 <div class="cboxde">
                     <h5>Pickaleball</h5>
-                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
+                    {/* <h2 style={{color:"black"}}>CODEX GAMES</h2> */}
+                    <p className='gradient-text'>Pickleball is a fun, fast-paced game that offers a great workout and a chance to socialize. Whether you're a beginner or an 
+                        experienced player, it's easy to pick up and enjoy...</p>
+                        <p  className='about-more'> <b>About More</b></p>
+                </div>
+            </div>
+            <div class="cbox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
+                <div class="cboxde">
+                    <h5>OUR ALL GAMES</h5>
+
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                         <p  className='about-more'> <b>About More</b></p>
@@ -155,17 +163,7 @@ else{
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
-                    <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
-                        deleniti neque impedit earum omnis.</p>
-                        <p  className='about-more'> <b>About More</b></p>
-                </div>
-            </div>
-            <div class="cbox">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
-                <div class="cboxde">
-                    <h5>OUR ALL GAMES</h5>
-                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
+                 
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                         <p  className='about-more'> <b>About More</b></p>
@@ -175,7 +173,6 @@ else{
                 <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GqY5SxAZRelkzcxzyHdD39s6HziOE0yCZA&s" alt="title"/>
                 <div class="cboxde">
                     <h5>OUR ALL GAMES</h5>
-                    <h2 style={{color:"black"}}>CODEX GAMES</h2>
                     <p className='gradient-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum ipsa modi soluta nam error
                         deleniti neque impedit earum omnis.</p>
                   <p  className='about-more'> <b>About More</b></p>

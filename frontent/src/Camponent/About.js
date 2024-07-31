@@ -36,8 +36,13 @@ const About = () => {
               </div>
               <div className='about-last'>
                 <h3>WHY YOU CHOOSE US?</h3>
-                <p className='gradient-text-about-p'>We are a fresh and innovative game development studio,
-specializing in creating engaging digital products.</p>
+                <p className='gradient-text-about-p'> Our team of specialists brings a wealth of experience and knowledge to every project.
+                We leverage the latest technologies and methodologies to deliver cutting-edge solutions.
+                We work closely with our clients to understand their needs and deliver tailored solutions that drive success
+
+
+
+                </p>
               </div>
               </div>
               <div className='our-team'>
@@ -45,8 +50,10 @@ specializing in creating engaging digital products.</p>
                   <div className='team-first-child'>
                     <div className='myteam'><p>OurTeam</p></div>
                     <h2>We craft dreams!</h2>
-                    <p className='gradient-text-about-p'> We are Alone Clone Studios. We create award-winning games
-                      , remarkable memories and cutting-edge experiences</p>
+                    <p className='gradient-text-about-p'> Our mission is to pioneer the future
+                       of gaming, coding, and robotics by merging these dynamic fields.
+                        Through innovation and creativity, we aim to deliver solutions that inspire, educate, and entertain. Join us on this exciting
+                       journey as we explore new frontiers and redefine what’s possible.</p>
                   </div>
                   <div className='team-second-child'>
                     <div className='team-image'>
@@ -64,20 +71,21 @@ specializing in creating engaging digital products.</p>
 <div className='about-us'>
   <h2>
 About us.</h2>
-<p className='gradient-text-about-p'>Alone Clone Studios is a cutting-edge game
-   development powerhouse with a passion for crafting
-    immersive gaming experiences. Our journey began with a 
-    simple belief: that gaming has the power to transcend
-   boundaries and transport players to extraordinary worlds.</p>
+<p className='gradient-text-about-p'>BlackHole Infiverse isn't your 
+  average content creation company. Founded in 2021, we emerged with
+   a bold vision: to become a key player in the burgeoning meta, AI and
+    robotics space.  We're a passionate team driven by innovation,
+     constantly pushing the boundaries of traditional media and diving headfirst
+   into the future of immersive storytelling through VR/AR experiences..</p>
 
 </div>
 <div className='our-client-page'>
 <div className='our-client'>
   <p>BEST FEATURE</p>
   <h2 className='gradient-text'>Our Clients</h2>
-  <p className='gradient-text' >At our game development studio, our expertise
-     spans a wide spectrum, encompassing design,
-     graphics, branding, and development excellence.</p>
+  <p className='gradient-text' > Blackhole Infivrse can help your business achieve its goals. Contact us today to
+     learn more about our services and how we can support your vision.Blackhole Infivrse  has been instrumental in our growth. Their innovative
+      solutions and dedicated support have made a significant impact on our business</p>
 
 </div>
 <div className='our-clint-sec'>

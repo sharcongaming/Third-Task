@@ -142,86 +142,53 @@ Blockchain technology has revolutionized the way data
     </div>
    
    {/* ********market************** */}
+   <div className='coin-wallet'>
+    <div className='coin-first-div'>
+     <div className='getting-strat'>   <h2 style={{marginRight:""}}>Getting started</h2></div>
+        <div className='connent-wallet'>
+            <div className='inner-div'>
+                <div className='inner-div-first'>
+                    <div className='boxdiv'><p>01</p></div>
+                    <h2>choose your wallet</h2>
 
-   <section class="gridSection">
-        <div class="sectionDesc-marketDesc">
-            <div className='tet-line'>
-            <h1 class="sectionHeader">Markets at finger</h1>
-            <p class="sectionPara">The Blockchain is a decentralized, 
-                digital ledger of transactions that are recorded 
-                confirmed
-            </p>
-            </div>
-            <div class="eachMarket">
-                <img   style={{width:"20%", height:"200px"}} src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRHOMs-zyBEC7pDXMu8O8L8L1YdE0RwrW0mcsux2F6Rg5cn1-V" alt="handshake"/>
-                <div>
-                    <h1 class="marketTitle">Buying</h1>
-                    <p class="darkPara">
-                        Best cryptocurrency exchanges currently purchase 
-                        Bitcoin, Ethereum, and Litecoin other coins and tokens 
-                        on the platform.
-                    </p>
                 </div>
+                <p>A wallet is necessary for people wanting to use, 
+                    trade, or hold Dogecoin. You can pick a wallet</p>
+                    <div className='learn-more'><p>Learn More.</p></div>
             </div>
-            <div class="eachMarket">
-                <img   style={{width:"20%", height:"200px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwgFVQN3chz1IHfW2-ozVx4CPkjttfHA9DgVqc36HlOcyNucH" alt="handshake"/>
-                <div>
-                    <h1 class="marketTitle">Trading</h1>
-                    <p class="darkPara">
-                        The act of speculating on cryptocurrency price movements 
-                        via a CFD trading account, or buying and selling.
-                    </p>
+            <div className='inner-div'>
+                <div className='inner-div-first'>
+                    <div className='boxdiv'><p>02</p></div>
+                    <h2> configure your wallet</h2>
+
                 </div>
+                <p>After downloading, you can configure your wallet according to our</p>
+                    <div className='learn-more'><p>guide.</p></div>
             </div>
-            <div class="eachMarket">
-                <img   style={{width:"20%", height:"200px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCyybbde9un4-AP2FQ_anGAZ1L8DbnxPq5af4UlRj2NvBJN61" alt="handshake"/>
-                <div>
-                    <h1 class="marketTitle">Supporting</h1>
-                    <p class="darkPara">
-                        Don’t worry if you’re new to crypto and digital 
-                        currencies – Skrill makes setting up a cryptocurrency 
-                        wallet easy.
-                    </p>
+            <div className='inner-div'>
+                <div className='inner-div-first'>
+                    <div className='boxdiv'><p>03</p></div>
+                    <h2> get some coin</h2>
+
                 </div>
-            </div>
-            <div class="eachMarket">
-                <img    style={{width:"20%", height:"200px"}} src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKtlpOMrG8qTmDGVP0BVrEJO-lgOK9hhaCUOC6Vyjrf8lDGN_5" alt="handshake"/>
-                <div>
-                    <h1 class="marketTitle">Online</h1>
-                    <p class="darkPara">
-                        Cryptocurrency, especially Bitcoin, 
-                        has proven to be a popular trading 
-                        vehicle, even if legendary investors 
-                        as good.
-                    </p>
-                </div>
+                <p>There’s lots of ways to get your hands on some coin.</p>
+                    <div className='learn-more'><p>Learn More.</p></div>
             </div>
         </div>
-        <div class="sectionPic marketspicSection" id="sectionPic">
-           <h1 class="marketspicHeader">CRYPTOCURRENCY</h1>
-            <div class="marketsPicContainer">
-                <div class="marketPic marketPic1">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFAeyfnnS3DmcZ-P0raAhfouuM1BPitSP1Po0gk_tZJN1KP4v" alt=""/>
-                    <article class="marketTitle">Hot Sale</article>
-                </div>
-    
-                <div class="marketPic marketPic2">
-                    <img  style={{height:"200px"}} src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkzAAu5ZjnI7LOnPjvXQ2rEJQV7vRHOpRQNCeSDwVD0MmvQuuU" alt=""/>
-                    <article class="marketTitle">Bit coin</article>
-                </div>
-    
-                <div class="marketPic marketPic3">
-                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkzAAu5ZjnI7LOnPjvXQ2rEJQV7vRHOpRQNCeSDwVD0MmvQuuU" alt=""/>
-                    <article class="marketTitle">ETHEREUM</article>
-                </div>
-    
-                <div class="marketPic marketPic4">
-                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIFtto6U5cnuSIjaMtXcRGCJYRP6bTCYtR850ntBSpzfmMeiTW" alt=""/>
-                    <article class="marketTitle">CONNECTING</article>
-                </div>
-            </div>
-            </div>
-    </section>
+
+ 
+
+     
+
+      
+
+    </div>
+    <div>
+
+    </div>
+
+   </div>
+
     </div>
     
   )

@@ -52,7 +52,7 @@ const Chat = () => {
 									<span class="online_icon"></span>
 								</div>
                 <div class="user_info">
-									<span>ChatBot</span>
+									<span>Blackhole Infiverse</span>
 									<p>Ask me anything!</p>
 								</div>
 
