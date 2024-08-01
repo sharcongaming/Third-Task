@@ -8,17 +8,13 @@ const nav = document.getElementById("nav");
 
   return (
 
-         <div>
+         <div className='screen'>
         {/* <!-- Home page --> */}
         <section class="hero-gridSection">
         <div class="sectionDesc">
-            {/* <h1 class="headline">
-                Most popular way to trade <span class="cryptoText">CRYPTO</span>.
-            </h1> */}
             <p class="sub-headline">
              
 Blockchain is a decentralized digital ledger
-
 Introduction to Blockchain Technology
 Blockchain technology has revolutionized the way data
  is stored, verified, and transmitted, offering unparalleled security,
@@ -144,13 +140,13 @@ Blockchain technology has revolutionized the way data
    {/* ********market************** */}
    <div className='coin-wallet'>
     <div className='coin-first-div'>
-     <div className='getting-strat'>   <h2 style={{marginRight:""}}>Getting started</h2></div>
+     <div className='getting-strat'> 
+          <h2 style={{marginRight:""}}>Getting started</h2></div>
         <div className='connent-wallet'>
             <div className='inner-div'>
                 <div className='inner-div-first'>
                     <div className='boxdiv'><p>01</p></div>
                     <h2>choose your wallet</h2>
-
                 </div>
                 <p>A wallet is necessary for people wanting to use, 
                     trade, or hold Dogecoin. You can pick a wallet</p>

@@ -33,7 +33,6 @@ const AuthProvider = ({ children }) => {
         async function getCurrentUserData() {
             var token = JSON.parse(localStorage.getItem("token"));
             if (token) {
-
               try {
                 const response = await axios.post( "http://localhost:8000/get-current-user", { token });
                 // const response = await api.post("/all/get-current-user", { token });
@@ -42,7 +41,11 @@ const AuthProvider = ({ children }) => {
                         type: "LOGIN",
                         payload: response.data.user
                     })
-                } 
+                } else{
+                    dispatch({
+                        type:"LOGOUT",
+                    })
+                }
                 
               } catch (error) {
                 console.log(error)

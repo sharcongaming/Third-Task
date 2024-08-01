@@ -22,16 +22,16 @@ body{
     background-color: var(--darkblue);
     color: var(--white);
 }
-
-
-
-
+.screen{
+    background-color: #000;
+}
 /* Hero page */
 .headline{
     color: var(--white);
     font-size: 3rem;
     width: 100%;
     margin-top: 5%;
+    background-color: #000;
 }
 
 .cryptoText{
@@ -579,6 +579,7 @@ footer{
 }
 
 .inner-div{
+    border: 1px solid black;
     /* border: 1px solid rgb(124, 40, 40); */
     width: 25%;
     height: 200px;
@@ -607,16 +608,16 @@ justify-content: space-evenly;
     padding-top: 2%;
 }
 .learn-more{
-    border: 2px solid black;
+    border: 2px solid #59b2f4;
     margin-top: 3%;
     margin-right: 5%;
     width: 40%;
     border-radius: 5%;
 }
-.learn-more:hover p{
- 
+/* .learn-more:hover p{
+
     color:  black;
-}
+} */
 
 
 /* Tablets */

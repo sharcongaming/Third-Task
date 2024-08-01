@@ -1,5 +1,5 @@
 /* Global styles */
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@
 }
 .logo-navbar  img{
   /* border: 1px solid red; */
-  width: 40%;
+  width: 80%;
   height: 70px;
 
 }
@@ -51,7 +51,7 @@
 }
 
 .second-navigation > p:hover {
-  color: red;
+  color: #59b2f4;
 }
 
 /* Menu icon styles */
@@ -82,7 +82,7 @@
 }
 
 .menu a:hover {
-  background-color: red;
+  background-color: white;
 }
 
 /* Show menu when active */
@@ -90,54 +90,39 @@
   display: block;
 }
 
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
 /* Responsive styles */
-@media (max-width: 1118px) {
-  .logo-navbar {
-    left: 8%;
-    top: 20px;
-    width: 130px;
-  }
-}
-
-@media (max-width: 944px) {
-  .logo-navbar {
-    left: 8%;
-    top: 20px;
-    width: 130px;
-  }
-  .second-navigation > p {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 860px) {
+@media (max-width: 768px) {
   .second-navigation {
-    display: none; /* Hide second navigation */
+    display: none;
   }
+
   .menu-icon {
-    display: block; /* Show menu icon */
-  }
-}
-
-@media (max-width: 600px) {
-  .navigation {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-  .navbar-first {
-    width: 100%;
-    text-align: center;
-  }
-  .second-navigation {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .search {
-    width: 100%;
-  }
-  .dropbtn {
-    width: 100%;
+    display: block;
   }
 }

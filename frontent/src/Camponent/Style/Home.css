@@ -8,7 +8,8 @@
     scroll-behavior: smooth;
     }
     .gradient-background {
-        background: linear-gradient(to right, #191f36, #8c9eff);
+      background-color: black;
+        /* background: linear-gradient(to right, #191f36, #8c9eff); */
         background-repeat: no-repeat;
       }
       
@@ -24,8 +25,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    /* background: var(--bg-color); */
+    /* color: var(--text-color); */
+
 } 
 
 .section {
@@ -45,44 +47,6 @@ body{
     animation-play-state: running;
     animation-timeline: scroll into view;
   }
-/* cursor point */
-
-.cursor {
-    z-index: 999;
-    position: fixed;
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 20px red,
-                0 0 60px #cc0c0c,
-                0 0 20px rgb(151, 136, 136);
-    animation: colours 5s infinite;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-
-  @keyframes colors {
-    0% {
-      filter: hue-rotate(360deg);
-    }
-
-    100% {
-      filter: hue-rotate(0deg);
-    }
-  }
-
-  .cursor:before {
-    content: '';
-    position: absolute;
-    background: #2696E8;
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%, -30%);
-    border-radius: 50%;
-  }
 
 /* **** scrolling bar **** */
     ::-webkit-scrollbar{
@@ -96,59 +60,40 @@ body{
     background: linear-gradient(#642bff,#ff22e6);
     border-radius: 10px;
     
-}
+} */
 
 /* **** scrolling bar **** */
 
-/* *** Scrolling bar ***** */
 .home-page-screen{
-   border: 2px solid black;
+   border: 5px yellow;
+   width: 100%;
    
 }
 .container-page{
     /* border: 5px solid red; */
+    width: 100%;
 }
-
-/* .mainDiv{
-    width: 97%; 
-    height: 350px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform:translate(-50%,-50%) ;
-    background-image: url(https://www.sliderrevolution.com/wp-content/uploads/2023/04/image-slider-example.jpg);
-    background-size: 100%  100%;
-    box-shadow:1px 2px  10px 5px white;
-    animation: slider 11s infinite linear;    
+.mainDiv{
+  border: 2px solid black;
+  margin-top: 2%;
+  width: 100%;
+  /* height: 900px; */
 }
-@keyframes slider{
-    0%{background-image: url(https://img.freepik.com/premium-photo/young-gaming-team-epic-battles-multiplayer-action-neon-arena_1036975-110472.jpg?size=626&ext=jpg&ga=GA1.1.1069028106.1717068952&semt=sph); }
-    35%{background-image: url(https://as1.ftcdn.net/v2/jpg/05/99/66/44/1000_F_599664488_G9ldjGHADRlW3hi9BYwL5x9STzvSUbnE.jpg); }
-    75%{ background-image: url(https://t3.ftcdn.net/jpg/02/43/40/98/240_F_243409810_C2rWCXa7xa6FPvjZ7jmgBaTuAMH0djuf.jpg);}
-    100%{ background-image: url(https://as1.ftcdn.net/v2/jpg/04/70/53/54/1000_F_470535460_xpy0neCZx9gX8UTYHEVdRLT7UeqjM2Ek.jpg);}
-} */
-/* *** Scrolling bar ***** */
+.mainDiv>img{
+  width: 100%;
+  /* height: 900px; */
 
-
-
-
+}
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 5px solid red; */
-    /* margin-top: 20%; */
-    
+    border: 2px solid red;
+
 }
 .home-content {
     animation: slow-motion 5s ease-in-out infinite alternate;
-
-    /* border: 3px solid black; */
 }
-
-
-/* *************** */
-
 .icon-box{
  width: 10%;
  height: 110px;
@@ -175,7 +120,7 @@ body{
   margin-top: 5%;
 }
 
-/* ********************* */
+
 
 @keyframes slow-motion {
     0% {
@@ -196,11 +141,6 @@ body{
       transform: translateY(0);
     }
   }
-
-  
-/* Overflowing content reveal on scroll */
-
-  
 .home-content.visible {
     opacity: 1;
     transform: translateY(0);
@@ -215,16 +155,7 @@ body{
 span{
   color: var(--main-color);  
 }
-/* .multiple-text{
-    color: red;
 
-} */
-/* .home-content h1{
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: red;
-} */
 .Home-img>img{
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
@@ -264,14 +195,15 @@ section{
    font-size: 1.6rem; 
 }
 .socail-media{
-    /* border: 2px solid red; */
+  
 }
 .gradient-text {
-    background-image: linear-gradient(to right,  /* Direction of the gradient */
-                                   #f3ec78,  /* Starting color */
-                                   #af4261); /* Ending color */
-    background-clip: text;  /* Clip background to the text */
-    color: transparent;    /* Make the text color transparent */
+     color: #ea00fe;
+    /* background-image: linear-gradient(to right, 
+                                   #f3ec78, 
+                                   #af4261); */
+    background-clip: text;  
+    color: transparent;   
     transition: transform 0.3s ease;
     transform: translateY(-10px);
     animation: CSSscrollReveal ease-in-out both;
@@ -364,7 +296,7 @@ section{
 }
 
 .about-more{
-   border: 1px solid  rgb(72, 72, 182);
+   border: 1px solid #59b2f4;
     height: 40px;
     width: 30%;
     border-radius: 20px;
@@ -373,202 +305,216 @@ section{
 }
 .about-more:hover{
     transform: translateY(-5px);
-  box-shadow: 0 0 10px 0 rgb(89, 89, 182);
-    /* transform: rotate(5deg); */
+  box-shadow: 0 0 10px 0 #59b2f4;
     transform: translateY(-5px);  
-    /* transform: scale(1.1); */
 
 }
 .about-more>b{
     font-size: 12px;
 }
 .about-more>b:hover{
-   color: rgb(89, 89, 182);
-   
-    
+   color:#59b2f4;   
 }
-
-.container-filter-flex{
-    /* border: 2px solid red; */
-    width: 50%;
-    align-items: center;
-    height: 60px;
-    margin-top: 3%;
-    display: flex;
-justify-content: space-around; 
-margin-left: 21%;
-   gap: 30px;
-}
-.active{
- border: 1px solid rgb(100, 42, 209);
- width: 15%;
- height: 40px;
- align-items: center;
- text-align: center;
- color: #fff;
- /* background-color: rgb(58, 58, 136); */
- border-radius: 20px;
- font-size: 12px;
- transition: transform 0.3s ease;
-
-}
-.active>p{
-    margin-top: 10%;
-}
-.container-filter-flex>:hover{
-    border: 2px rgb(70, 70, 197);
-
-}
-
-
-.active:hover{
-    background-color:0 0 1rem var(--main-color);
-    color: var(--snd-bg-color); 
-    box-shadow: 0 0 1rem var(--main-color) ; 
-    transform: translateY(-5px);
-}
-
-
-/* ***************feature-games**************** */
-.feature-games{
-    /* border: 2px solid red; */
-}
-.feature-games>h1:hover{
-color: black;
-}
-.gamecards-container-flex{
-    width: 90%;
-    /* margin-left: 10%; */
-}
-.cardsection{
-    width: 100%;
-    /* border: 4px solid black; */
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap;
-    margin-top: 4%;
-    height: 440px;
-    /* object-fit: cover; */
-    
-
-}
-.cardimg{
-    /* border: 8px yellow; */
-    width: 30%;
-    box-shadow: 0 0 10px #777;
-    height: 440px;
-    box-shadow: 0 0 10px #fff;
-    /* transform: translate(150px);
-    opacity: 0; */
-    transition: all 2s ease;
-    position: relative;
-
-}
-.cardimg.active{
-    transform: translate(0px);
-    opacity: 1;
-}
-.cardimg:hover{
-    /* transform: scale(1.1); */
-    border: 2px solid black  ;
-    transition: transform 0.6s ease-out;
-    border: 1px solid black;
-    opacity: 1;
-    transform: translateY(0);
-    transform: scale(1.05);
-}
-.tegs {
-    /* position: absolute; */
-    bottom: 6%;
-    right: 6%;
-}
-
-.tegs a {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 12px;
-    margin-right: 5px;
-}
-
-.tegs i {
-    color: var(--main-color);
-}
-.cardinfo h2 {
-    width: 100%;
-    font-family: var(--font-family);
-    text-transform: uppercase;
-    color: #222;
-    margin-top: 10px;
-    cursor: pointer;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-wrap: nowrap;
-    transition: .3s linear;
-}
-
-.card:hover h2 {
-    color: var(--main-color);
-}
-
-.contact-section{
-    width: 90%;
-    margin-top: 2%; animation: slow-motion 5s ease-in-out infinite alternate;
-}
-
 
 @keyframes slow-motion {
-  0% {
-    transform: translateY(0); /* Start at top */
+0% {
+  transform: translateY(0); /* Start at top */
+}
+100% {
+  transform: translateY(20px); /* Move down slightly on animation */
+}
+}
+
+/* slider */
+
+
+/* responsive home page */
+@media (max-width: 1200px) {
+  .icon-box {
+      width: 15%;
+      left: 75%;
+      top: 80%;
   }
-  100% {
-    transform: translateY(20px); /* Move down slightly on animation */
+  .home-content h3 {
+      font-size: 2.8rem;
   }
+  .Home-img > img {
+      width: 35vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-box {
+      width: 20%;
+      left: 70%;
+      top: 85%;
+  }
+  .home-content h3 {
+      font-size: 2.4rem;
+  }
+  .Home-img > img {
+      width: 45vw;
+  }
+  .gaming-section > h2 {
+      font-size: 3rem;
+  }
+  .mainDiv{
+    border: 2px solid black;
+    margin-top: 2%;
+    width: 100%;
+  }
+  .threebox-container-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+  .cbox {
+      width: 80%;
+      margin: 2% 0;
+  }
+  .about-more {
+      width: 50%;
+     
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-box {
+      width: 30%;
+      left: 60%;
+      top: 90%;
+  }
+  .mainDiv{
+    border: 2px solid black;
+    margin-top: 2%;
+    width: 100%;
+  }
+  .home-content h3 {
+      font-size: 2rem;
+  }
+  .Home-img > img {
+      width: 55vw;
+  }
+  .socail-media a {
+      width: 3rem;
+      height: 3rem;
+  }
+  .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1.4rem;
+  }
+  section {
+      padding: 8rem 5% 2rem;
+  }
+}
+@media (max-width: 1200px) {
+    .icon-box {
+        width: 15%;
+        left: 75%;
+        top: 80%;
+    }
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+    .Home-img > img {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-box {
+        width: 20%;
+        left: 70%;
+        top: 85%;
+    }
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+    .Home-img > img {
+        width: 45vw;
+    }
+    .gaming-section > h2 {
+        font-size: 3rem;
+    }
+    .threebox-container-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cbox {
+        width: 80%;
+        margin: 2% 0;
+    }
+    .about-more {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-box {
+        width: 30%;
+        left: 60%;
+        top: 90%;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .Home-img > img {
+        width: 55vw;
+    }
+    .socail-media a {
+        width: 3rem;
+        height: 3rem;
+    }
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+    section {
+        padding: 8rem 5% 2rem;
+    }
 }
 
 
 
-
-
-     /* {Contact Section} */
+   /* {Contact Section} */
 
 .contact h2{
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 
 }
 .contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .contact form .input-box{
-    display:flex ;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display:flex ;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contact form .input-box input,
 .contact form textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--snd-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-    height: 70px;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--snd-bg-color);
+  border-radius: .8rem;
+  margin: .7rem 0;
+  height: 70px;
 }
 .contact form .input-box input{
-    width: 49%;
+  width: 49%;
 
 }
 .contact form textarea{
-    resize: none;
+  resize: none;
 
 }
 .contact form .btn{
-    margin-top: 2rem;
-    cursor: pointer;
-    width: 30%;
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 30%;
 }
 
 
@@ -576,78 +522,63 @@ color: black;
 
 /* For screens 992px and below */
 @media (max-width: 992px) {
- 
-  .contact form {
-      max-width: 90%;
-  }
 
-  .contact form .input-box {
-      flex-direction: column; 
-  }
+.contact form {
+    max-width: 90%;
+}
 
-  .contact form .input-box input {
-      width: 100%; 
-  }
+.contact form .input-box {
+    flex-direction: column; 
+}
 
-  .contact form .btn {
-      width: 100%; 
-  }
-  .contact h2{
-    margin-top: 13%;
-  }
+.contact form .input-box input {
+    width: 100%; 
+}
 
-  
+.contact form .btn {
+    width: 100%; 
+}
+.contact h2{
+  margin-top: 13%;
+}
+
+
 }
 
 
 @media (max-width: 768px) {
-  .contact form {
-      padding: 0 1rem; 
-  }
+.contact form {
+    padding: 0 1rem; 
+}
 
-  .contact form .input-box input,
-  .contact form textarea {
-      font-size: 1.4rem; 
-      padding: 1rem; 
-  }
+.contact form .input-box input,
+.contact form textarea {
+    font-size: 1.4rem; 
+    padding: 1rem; 
+}
 
-  .contact form .btn {
-      font-size: 1.4rem; 
-  }
+.contact form .btn {
+    font-size: 1.4rem; 
+}
 }
 
 /* For screens 480px and below */
 @media (max-width: 480px) {
-  .contact form .input-box input,
-  .contact form textarea {
-      font-size: 1.2rem; 
-      padding: 0.8rem; 
-      height: 60px; 
-  }
-
-  .contact form .btn {
-      font-size: 1.2rem; 
-      padding: 0.8rem; 
-  }
-}
-            /* {****************Tournaments*******************} */
-
-.Tournaments{
-    border: 1px solid black;
+.contact form .input-box input,
+.contact form textarea {
+    font-size: 1.2rem; 
+    padding: 0.8rem; 
+    height: 60px; 
 }
 
+.contact form .btn {
+    font-size: 1.2rem; 
+    padding: 0.8rem; 
+}
+}
+       
 
 
-@media(max-width: 1118px){
-  .home-page-screen{
-    width: 80%;
-    padding: 0;
-  }  
-} 
 
- @media only screen and (max-width:500px){
-    .home-page-screen{
-        width: 50%;
-        padding: 0;
-      }
-  }
+
+

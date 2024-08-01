@@ -12,6 +12,7 @@ const Navbar = () => {
   const [account, setAccount] = useState(null);
   const [provider, setProvider] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const connect = async () => {
@@ -23,7 +24,6 @@ const Navbar = () => {
         console.log('Please install MetaMask!');
       }
     };
-
     connect();
   }, []);
 
@@ -45,6 +45,12 @@ const Navbar = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
+// ****************toggleMenu*******************
+const toggleMenu = () => {
+  setMenuOpen(!menuOpen);
+};
+
+// ****************toggleMenu*******************
   return (
     <div>
       <div className='navigation'>
@@ -53,12 +59,13 @@ const Navbar = () => {
          
           <img  onClick={() => navigate('/')}
           src={bbImage} alt="Description of the image" />
-
-
-        
           </div>
         </div>
-        <div className='second-navigation'>
+        <div className='menu-icon' onClick={toggleMenu}>
+          <i className="fa fa-bars"></i>
+        </div>
+       
+        <div className="second-navigation ">
           <p onClick={() => navigate('/about')}>About Us</p>
           <p onClick={() => navigate('/gaming')}>Game</p>
           <p onClick={() => navigate('/robotics')}>Robotics</p>
@@ -111,6 +118,26 @@ const Navbar = () => {
           )}
         </div>
       </div>
+
+      {/* // ****************toggleMenu******************* */}
+
+      <div className={`menu ${menuOpen ? 'open' : ''}`}>
+        <a onClick={() => { navigate('/about'); toggleMenu(); }}>About Us</a>
+        <a onClick={() => { navigate('/gaming'); toggleMenu(); }}>Game</a>
+        <a onClick={() => { navigate('/robotics'); toggleMenu(); }}>Robotics</a>
+        <a onClick={() => { navigate('/blockchain'); toggleMenu(); }}>Blockchain</a>
+        <a onClick={() => { navigate('/contact'); toggleMenu(); }}>Contact</a>
+        {state?.user?.email && (
+          <>
+            <a onClick={toggleDropdown}>Profile</a>
+            <a onClick={() => dispatch({ type: "LOGOUT" })}>Logout</a>
+          </>
+        )}
+        {!state?.user?.email && (
+          <a onClick={() => { navigate('/register'); toggleMenu(); }} style={{ color: "red" }}>Register</a>
+        )}
+      </div>
+{/* // ****************toggleMenu******************* */}
     </div>
   );
 }
