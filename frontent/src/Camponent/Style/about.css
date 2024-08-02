@@ -3,22 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+.about-page{
+  background-color: black;
+}
 .port-page-about{
     width: 100%;
-    background: linear-gradient(to right, #191f36, #8c9eff);
+    background-color: black;
     background-repeat: no-repeat;
     height: 600px;
     border: 2px solid black;
-    margin-top: 5%;
+    margin-top: 2.10%;
 }
-/* 
-.parllax-inner{
-  background-image: url("https://img.freepik.com/free-photo/rainbow-light-watercolor-stains_125540-2250.jpg?w=996&t=st=1718110122~exp=1718110722~hmac=e92dbeb712fc28d4f25db9ea220bf5e4d02ae23ae6f886409d426d5a3f83f1fc");
- background-size: cover;
- background-position: center;
- background-attachment: fixed;
 
-} */
 .about-first-page{  
     border: 1px solid black;
 }
@@ -26,26 +22,78 @@
     height: 80px;
     width: 70%;
     margin-left: 17%;
-    margin-top: 12%;
+    margin-top: 4%;
 }
-.gradient-text-about{
-    background-image: linear-gradient(to right,  /* Direction of the gradient */
-                                   #f3ec78,  /* Starting color */
-                                   #af4261); /* Ending color */
-    background-clip: text;  /* Clip background to the text */
-    color: transparent;   
-    font-size: 25px;
-    animation: slow-motion 5s ease-in-out infinite alternate;
+.About-Blackhole{
+  width: 90%;
+  height: 500px;
+display: flex;
+justify-content: space-around;
+}
+.About-Blackhole-lfft{
+  width: 40%;
 
+}
+.About-Blackhole-lfft >img{
+  width: 50%;
+  height: 220px;
+}
+.About-Blackhole-lfft>h2{
+  color: white;
+  font-size: 15px;
+  margin-top: 5%;
+}
+/* Responsive Styles */
+@media (min-width: 576px) {
+  /* Tablet view */
+  .About-Blackhole-item {
+    width: 45%;
+  }
 
+  .About-Blackhole-item h2 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .About-Blackhole-item {
+    width: 100%; 
+    padding: 0 10px; 
+  }
+  .About-Blackhole{
+    margin-top: 16%;
+  }
+
+  .About-Blackhole-item h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Desktop view */
+  .About-Blackhole-item {
+    width: 40%;
+  }
+
+  .About-Blackhole-item h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Larger desktop view */
+  .About-Blackhole-item {
+    width: 30%;
+  }
+
+  .About-Blackhole-item h2 {
+    font-size: 1.3rem;
+  }
 }
 .second-port-about{
     height: 600px;
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 50% cover 50%
-    /* border: 1px solid black; */
-    
+    animation-range: entry 50% cover 50%  
   }
   .port-dived-about{
     width: 85%;
@@ -56,64 +104,40 @@
 
   }
   .first-child{
-    /* border: 1px solid black; */
     width: 25%;
   }
   .second-child{
     border-bottom: 1px solid gray;
-    /* border: 1px solid black; */
     width: 60%;
    
   }
-  .gradient-text-about-p{
-    background-image: linear-gradient(to right,  /* Direction of the gradient */
-    #f3ec78,  /* Starting color */
-    #af4261); /* Ending color */
-background-clip: text;  /* Clip background to the text */
-color: transparent;
-  }
+
   .about-last{
     width: 80%;
     margin-left: 8%;
     margin-top: 8%;
-    animation: CSSscrollReveal ease-in-out both;
-    animation-timeline: view();
-    animation-range: entry 100% cover 100%;
-    animation: slow-motion 5s ease-in-out infinite alternate;
-
   }
   .about-last:hover{
     border-bottom: 1px solid gray;
 
   }
   .about-last>p{
-    font-size: 25px;
+    font-size: 15px;
     
   }
-  .our-team{
-    /* border: 1px solid black; */
-  }
+ 
   .myteam{
-    border: 1px solid black;
+    border: 1px solid #0dcaf0;
     width: 30%;
     height: 50px;
     margin-left: 30%;
     margin-top: 5%;
     border-radius:40px ;
-    animation: CSSscrollReveal ease-in-out both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
-    transform: translateY(-10px);
-    animation: CSSscrollReveal ease-in-out both;
-background: linear-gradient(to right, #191f36, #8c9eff);
-
-
-
   }
 
  
   .myteam:hover{
-    border: 2px solid black;
+    box-shadow: 0 0 1rem var(--main-color);
  
   }
   .myteam>p{
@@ -128,9 +152,7 @@ background: linear-gradient(to right, #191f36, #8c9eff);
     margin-top: 3%;
     display: flex;
     justify-content: space-around;
-    animation: CSSscrollReveal ease-in-out both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%
+
   }
   @keyframes CSSscrollReveal{
     from{
@@ -143,24 +165,18 @@ background: linear-gradient(to right, #191f36, #8c9eff);
     transform: translateY(0);
   }
   .team-first-child{
-    /* border: 1px solid black; */
     width: 40%;
-   
-  
-  
   }
   .team-second-child{
-    /* border: 1px solid black; */
     width: 40%;
     display: flex;
     justify-content: space-around;
   }
   .team-image{
     width: 100%;
-    /* border: 1px solid black; */
     height: 350px;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px #fff; */
+
     border-radius: 10px;
     
   }
@@ -180,12 +196,10 @@ background: linear-gradient(to right, #191f36, #8c9eff);
     width: 50%;
     margin-left: 50%;
     margin-top: 4%;
-    animation: CSSscrollReveal ease-in-out both;
+    /* animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
     animation-range: entry 50% cover 50%;
-    animation: slow-motion 5s ease-in-out infinite alternate;
-
-
+    animation: slow-motion 5s ease-in-out infinite alternate; */
    }
    .our-client-page{
     border-bottom: 1px solid gray;
@@ -195,7 +209,7 @@ background: linear-gradient(to right, #191f36, #8c9eff);
     display: flex;
     height: 300px;
     justify-content: space-around;
-    animation: slow-motion 5s ease-in-out infinite alternate;
+    /* animation: slow-motion 5s ease-in-out infinite alternate; */
 
    }
    @keyframes slow-motion {
@@ -207,68 +221,68 @@ background: linear-gradient(to right, #191f36, #8c9eff);
   }
 }
    .our-client{
-    /* border: 1px solid black; */
     width: 40%;
     margin-right: 5%;
  
    }
    .our-clint-sec{
-    /* border: 1px solid black; */
     width: 60%;
    }
 
-   
-/* For screens 480px and below */
-@media (max-width: 480px) {
-  .text-div-about {
-      width: 95%;
-      margin-left: 2.5%;
-  }
 
-  .port-dived-about {
-      flex-direction: column;
-      align-items: center;
-  }
 
-  .first-child, .second-child {
-      width: 100%;
-      margin-bottom: 20px;
+   @media (max-width: 480px) {
+    .text-div-about {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+  
+    .port-dived-about {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .first-child, .second-child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .about-last {
+        width: 100%;
+        margin-left: 0;
+    }
+  
+    .myteam {
+        width: 80%;
+        margin-left: 10%;
+    }
+  
+    .our-team-div {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+  
+    .team-first-child, .team-second-child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .about-us {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+  
+    .our-client-page {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+  
+    .our-client, .our-clint-sec {
+        width: 100%;
+        margin-bottom: 20px;
+    }
   }
-
-  .about-last {
-      width: 100%;
-      margin-left: 0;
-  }
-
-  .myteam {
-      width: 80%;
-      margin-left: 10%;
-  }
-
-  .our-team-div {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-  }
-
-  .team-first-child, .team-second-child {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .about-us {
-      width: 95%;
-      margin-left: 2.5%;
-  }
-
-  .our-client-page {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-  }
-
-  .our-client, .our-clint-sec {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-}
+  
+  

@@ -5,10 +5,11 @@
 }
 .game-first-page{
     width: 100%;
-    background: linear-gradient(to right, #191f36, #8c9eff);
+    background-color: black;
+    /* background: linear-gradient(to right, #191f36, #8c9eff); */
     background-repeat: no-repeat;
     border: 2px solid black;
-    margin-top: 5%;
+    margin-top: 2.10%;
 }
 .text-game{
   /* border: 1px solid black; */

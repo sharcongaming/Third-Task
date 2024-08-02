@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://via.placeholder.com/1920x1080.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+    }
+
+    .slide img {
+      width: 95%;
+      height: 500px;
+      display: block;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: rgba(128, 128, 128, 0.7);
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #prevBtn {
+      left: 10px;
+    }
+
+    #nextBtn {
+      right: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .slide img {
+        height: 300px;
+      }
+
+      button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .slide img {
+        height: 400px;
+      }
+
+      button {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slides">
+    <div class="slide"><img src="https://assets.tatacliq.com/medias/sys_master/images/49641516630046.jpg" alt="Slide 1"></div>
+    <div class="slide"><img src="https://assets.tatacliq.com/medias/sys_master/images/49609610592286.jpg" alt="Slide 2"></div>
+    <div class="slide"><img src="https://assets.tatacliq.com/medias/sys_master/images/49631427756062.jpg" alt="Slide 3"></div>
+    <div class="slide"><img src="https://assets.tatacliq.com/medias/sys_master/images/49595531231262.jpg" alt="Slide 4"></div>
+    <div class="slide"><img src="https://assets.tatacliq.com/medias/sys_master/images/49641516400670.jpg" alt="Slide 5"></div>
+    <div class="slide"><img src="https://assets.tatacliq.com/medias/sys_master/images/49641513549854.jpg" alt="Slide 6"></div>
+  </div>
+  <button id="prevBtn" onclick="prevSlide()">❮</button>
+  <button id="nextBtn" onclick="nextSlide()">❯</button>
+</div>
+
+<script>
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const slideWidth = document.querySelector('.slide').offsetWidth;
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
+    currentSlide = index;
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+    showSlide(currentSlide);
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % document.querySelectorAll('.slide').length;
+    showSlide(currentSlide);
+  }
+
+  window.addEventListener('resize', () => showSlide(currentSlide));
+</script>
+</body>
+</html>
+
+
+

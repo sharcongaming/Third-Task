@@ -1,9 +1,10 @@
 import React from 'react'
 import ChatBox from './ChatBox'
+import "./Style/cont.css"
 
 const Contact = () => {
   return (
-    <div>
+    <div className='screen-contact'>
  <div className='contact-section'>
 
 <div  class="contact" id="contact">

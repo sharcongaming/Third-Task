@@ -9,16 +9,18 @@ import Footer from './Camponent/Footer';
 import About from './Camponent/About';
 import { Game } from './Camponent/Game';
 import Portfolio from './Camponent/Portfolio';
-import Balance from './Camponent/Balance';
-import NFTs from './Camponent/NFTs';
-import MyWallet from './Camponent/MyWallet';
-import Authenticate from './Camponent/Authenticate';
 import Contact from './Camponent/Contact';
 import ChatBox from './Camponent/ChatBox';
 import Tournament from './Camponent/Tournament';
 import Chat from './Camponent/Chat';
 import Robotics from './Camponent/Robotics';
 import Blockchain from './Camponent/Blockchain';
+
+// import Balance from './Camponent/Balance';
+// import NFTs from './Camponent/NFTs';
+// import MyWallet from './Camponent/MyWallet';
+// import Authenticate from './Camponent/Authenticate';
+
 
 function App() {
   return (

@@ -7,10 +7,10 @@
 .here{
  height: 100%; 
  width: 100%; 
-/* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://tse3.mm.bing.net/th?id=OIP.jStoRLa2F72XY3Gypku5ugHaEK&pid=Api&P=0&h=180");
-background-position: center;
-background-size: cover;
-position: absolute; */
+ margin-top: 2.50%;
+ background-color: black;
+ border: 2px solid black;
+ 
 }
 .from-box{
       width: 380px;
@@ -19,25 +19,21 @@ position: absolute; */
       margin: 6% auto;
       background:#fff;
       padding: 5px;
-      /* border: 2px solid red; */
-      /* border-radius: 40px; */
-      /* overflow: hidden; */
-
-}
-.body-first{
-    /* border: 4px solid black; */
 }
 .form{
     border: 2px solid;
 }
-.button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative; 
-    box-shadow: 0 0 20px 9px  #ff61241f;
-    border-radius: 30px;
+.login-title{
+    text-align: center;
+  padding: 20px;
+  border-radius: 8px;
 }
-
+.login-title>p{
+    color: #59b2f4;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin: 0; 
+}
 .button-register{
     padding: 10px;
     background: transparent;
@@ -46,16 +42,12 @@ position: absolute; */
     position: relative; 
     font-size: 15px; 
 }
-.button-register:hover{
-    color: red;
-}
 button{
     top: 0;
     left: 0;
     position: absolute; 
     width: 110px;
     height: 100%;
-    background:  linear-gradient(to right, #ff105f, #ffad06);
     border-radius: 30px;
     transition: .5s;
     border: none;
@@ -72,7 +64,6 @@ button{
       border-radius: 30px;
 }
 .form-first{
-    /* border: 2px solid red; */
     width: 80%;
     margin-left: 10%;
 }
@@ -82,7 +73,6 @@ button{
       width:280px ;
       transition: .5s;
       left: 50px;
-      /* border: 4px solid black; */
 }
 .input-field{
       width: 100%;
@@ -95,9 +85,6 @@ button{
        outline: none;
        background: transparent;
        height: 20px;
-   
-    
-
 }
 .label{
     margin-right: 60%;
@@ -109,28 +96,99 @@ button{
       cursor: pointer;
       display: block;
       margin: auto;
-      background:  linear-gradient(to right, #ff105f, #ffad06);
-border: 0;
-outline: none;
+      border: 2px solid #59b2f4;
 border-radius: 30px;
 margin-top: 10%;
 
 
 }
-.policy-privacy{
-    /* border: 2px solid red; */
+.submit-btn:hover{
+  background-color: #59b2f4;
+  transition: transform 0.6s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+    transform: scale(1.05);
+
+}
+.policy{
     margin-top: 15%;
 
 
 }
-.policy-privacy>p{
-    color: red;
-    font-size: 10px;
+.policy>p{
+    color:  #59b2f4;;
+    font-size: 15px;
 }
-
 span{
-      color: #777;
-      font-size: 10px;
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+   color:  #59b2f4;;
     
-
 }
+.policy p{
+    color: red;
+}
+.policy>p,b{
+    color: rgb(221, 15, 15);
+    cursor: pointer;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .from-box {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .from-box {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .from-box {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .input-group {
+      width: 90%;
+    }
+  
+    .submit-btn {
+      width: 90%;
+      margin-top: 15%;
+    }
+  
+    .policy {
+      margin-top: 20%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .from-box {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .login-title > p {
+      font-size: 1.2rem;
+    }
+  
+    .input-group {
+      width: 95%;
+    }
+  
+    .submit-btn {
+      width: 95%;
+      margin-top: 20%;
+    }
+  
+    .policy {
+      margin-top: 25%;
+    }
+  }

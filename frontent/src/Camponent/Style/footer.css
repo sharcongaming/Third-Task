@@ -9,20 +9,18 @@ box-sizing: border-box;
 width: 100%;
 }
 .screen{
-    /* border: 2px solid red; */
     width: 100%;
-    /* border-color: black; */
+ 
 }
 .firstfooter{
     max-width: 1170px;
-    background-color: black;
     margin: auto;
-/* border:5px solid red ;  */
    width: 100%;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
+    
 }
 ul{
     list-style: none;
@@ -30,6 +28,7 @@ ul{
 .footer-page{
     background-color: #24262b;
     padding: 70px 0;
+    
 }
 .footer-col{
    width:25% ; 
@@ -48,7 +47,6 @@ ul{
     position: absolute;
     left: 0;
     bottom: -10px;
-    /* background-color: #e91e63; */
     height: 2px;
     box-sizing: border-box;
     width: 50px;

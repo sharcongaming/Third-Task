@@ -38,7 +38,7 @@ export const Game = () => {
 
       <div class="content-container">
     <div class="content-item text">
-      <h2 style={{color:"black"}}>Pickleball</h2>
+      <h2 style={{color:"#0dcaf0"}}>Pickleball</h2>
       <p>Pickleball is a fun, fast-paced game that offers a
          great workout and a chance to socialize. Whether you're a 
         beginner or an experienced player, it's easy to pick up and enjoy..</p>
@@ -47,7 +47,7 @@ export const Game = () => {
         <img src="https://st4.depositphotos.com/1446098/39943/i/450/depositphotos_399439086-stock-photo-pickleball-balls-paddle-sport-pickleball.jpg"/>
    
     <div class="overflowing-content">
-      <p>This is the overflowing content that appears as you scroll down.</p>
+      {/* <p>This is the overflowing content that appears as you scroll down.</p> */}
     </div>
   </div>
     </div>
@@ -55,7 +55,7 @@ export const Game = () => {
     
     <div class="content-container">
     <div class="content-item text">
-      <h2  style={{color:"black"}}>volleyball</h2>
+      <h2  style={{color:"#0dcaf0"}}>volleyball</h2>
       <p>Volleyball is an engaging and dynamic sport suitable for
          players of all ages and skill levels. Whether played competitively or
          recreationally, it offers numerous physical, social, and mental benefits..</p>
@@ -64,7 +64,7 @@ export const Game = () => {
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mGGbXfKo3pAtUXxBSf_Ndmw9eZN7FqkT0g&s"/>
    
     <div class="overflowing-content">
-      <p>This is the overflowing content that appears as you scroll down.</p>
+      {/* <p>This is the overflowing content that appears as you scroll down.</p> */}
     </div>
   </div>
     </div>
@@ -72,7 +72,7 @@ export const Game = () => {
     
     <div class="content-container">
     <div class="content-item text">
-      <h2  style={{color:"black"}}>badminton </h2>
+      <h2  style={{color:"#0dcaf0"}}>badminton </h2>
       <p>Badminton is a fast-paced and engaging sport that can be enjoyed by
          people of all ages and skill levels. Whether played casually or
          competitively, it offers numerous physical, mental, and social benefits..</p>
@@ -81,7 +81,7 @@ export const Game = () => {
         <img src="https://st2.depositphotos.com/1046535/7980/i/450/depositphotos_79804048-stock-photo-badminton-sport-in-gym-hand.jpg"/>
    
     <div class="overflowing-content">
-      <p>This is the overflowing content that appears as you scroll down.</p>
+      {/* <p>This is the overflowing content that appears as you scroll down.</p> */}
     </div>
   </div>
  

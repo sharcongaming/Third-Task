@@ -11,12 +11,9 @@ const Register = () => {
     const [userData, setUserData] = useState({ name:"", email: "", password: "", confirmpassword: "",})
     //  console.log(userData,"-userData")
     const router = useNavigate()
-
     const handleChange = (event) => {
         setUserData({ ...userData,[event.target.name]: event.target.value })
     }
-
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         
@@ -41,8 +38,6 @@ const Register = () => {
         }
     }
      console.log(userData, "userData")
-
-
     // useEffect(() => {
     //     if (state?.user?.name) {
     //         router('/')
@@ -50,12 +45,11 @@ const Register = () => {
     // }, [ state])  // state
     // console.log(userData, "userData")
     return (
-
-
         <div className='here'>
         <div className='from-box'>
       <div className='button-box'>
-      <button type='button' className='button-register' >Sign Up</button>
+      <div className='login-title'><p>Sign up</p></div>
+ 
     
        </div>
        <div className='socail-icons'>
@@ -73,7 +67,7 @@ const Register = () => {
                 <input  className='submit-btn' type='submit' value='Register' /><br />
             </form>
             <div className='policy'>
-            <p  onClick={()=> router('/login')} style={{color:"red"}}>New Acount <b  style={{ cursor:'pointer', color:"black"}}> Click Here? </b> <br/> <span>I Agree to the terms & condition</span></p>
+            <p  onClick={()=> router('/login')} >New Acount <b> Click Here? </b> <br/> <span>I Agree to the terms & condition</span></p>
 
             </div>
         
